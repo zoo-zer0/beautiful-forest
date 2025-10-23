@@ -3,7 +3,6 @@ import * as d3 from "d3";
 import type { Game, Seat, CategoryInfo } from "../types";
 import { colorPalette } from "../colors";
 import { categoryData } from "./data/category";
-import BarChart from "../../assets/BarChart";
 /*interface Bin {
     x0: number;
     x1: number;
