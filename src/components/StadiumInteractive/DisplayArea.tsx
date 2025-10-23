@@ -1,7 +1,7 @@
 import type { Game, Seat } from '../types.ts';
 // In parent component (e.g., DisplayArea.tsx)
-import { stadiums } from "../../assets/data/stadium.ts";
-import { categoryData } from "../../assets/data/category.ts";
+import { stadiums } from "./data/stadium.ts";
+import { categoryData } from "./data/category.ts";
 import { StadiumChart } from "./StadiumChart.tsx";
 import { StadiumGraph } from "./StadiumGraph.tsx";
 interface Props {
