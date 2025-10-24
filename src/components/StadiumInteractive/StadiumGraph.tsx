@@ -19,28 +19,40 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
     const ref = useRef<SVGSVGElement | null>(null);
     useEffect(()=>{
         if(!game || !ref.current) return;
-        
+/*
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    text-align: left;
+    z-index:20;
+*/        
         const tooltip = d3
                 .select("body")
                 .append("div")
                 .style("position", "absolute")
-                .style("background", "white")
-                .style("padding", "8px 12px")
-                .style("border", "1px solid #ccc")
-                .style("border-radius", "6px")
-                .style("box-shadow", "0 2px 6px rgba(0,0,0,0.15)")
-                .style("font-size", "13px")
+                .style("background", "rgba(0, 0, 0, 0.7)")
+                .style("color", "white")
+                .style("padding", "6px 10px")
+                .style("border-radius", "4px")
+                .style("font-size", "12px")
                 .style("visibility", "hidden")
                 .style("white-space", "pre-line");
-
         const svg = d3.select(ref.current);
         svg.selectAll("*").remove();
+        
         const width = 600;
         const height = 500;
         const margin = {top: 20, right: 20, bottom: 60, left: 60};
         const primaryColor = colorPalette.primary;
         const secondaryColor = colorPalette.secondary;
         if (selectedSeat===null){
+            d3.select("body").selectAll("div.tooltip-hist").remove();
+
             const labelMap: Record<string, string> = {
             "평균_원가": "원가",
             "평균_가격": "평균 거래가"
@@ -84,7 +96,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                         d3.select(this).attr("fill", d3.color(color(d.key)!)!.brighter(0.9).toString());
                         tooltip.style("visibility", "visible").html
                         (`<strong>${d.category}</strong>
-                            <strong>${labelMap[d.key]}:</strong> ${d.value}원    
+                            <strong>${labelMap[d.key]}:</strong> ${Number(d.value).toLocaleString()}원    
                         `);
                     })
                     .on("mousemove", function (event) {
@@ -130,18 +142,20 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
         } else {
             const chartData: TicketData = ticketData;
             const seatCategory = selectedSeat.구역;
-
+            const tooltipHist = tooltip.attr("class", "tooltip-hist")
             const bins = chartData[game.id]?.[seatCategory];
             if(!bins || bins.length === 0) return;
             
 
             // x & y scales
             const x = d3
-                .scaleBand()
-                .domain(bins.map(d => d.name))
-                .range([margin.left, width - margin.right])
-                .padding(0.01);
+                .scaleLinear()
+                .domain([10000,460000])
+                .range([margin.left, width - margin.right]);
+            const xTicks = d3.range(10000,450001, 10000);
+            const filteredXTicks = xTicks.filter((d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
 
+            const binWidth = x(10000+10000) - x(10000);
             const y = d3
                 .scaleLinear()
                 .domain([0, 120])
@@ -155,9 +169,9 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .data(bins)
                 .enter()
                 .append("rect")
-                .attr("x", d => x(d.name)!)
+                .attr("x", d => x(d.name))
                 .attr("y", d => y(d.value))
-                .attr("width", x.bandwidth())
+                .attr("width", binWidth)
                 .attr("height", d => y(0) - y(d.value))
                 .attr("fill", rectColor)
                 .on("mouseover", function (_event, d) {
@@ -166,24 +180,27 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                     let content = ``;
                     if (d.breakdown) {
                         const breakdownText = Object.entries(d.breakdown)
-                            .map(([key, val]) => `${key}: ${val}`)
+                            .map(([key, val]) => `<strong>${key}:</strong> ${val}`)
                             .join("\n");
                         content += `${breakdownText}`;
                     }
-                    tooltip.style("visibility", "visible").text(content);
+                    tooltipHist.style("visibility", "visible").html(content);
                 })
                 .on("mousemove", function (event) {
-                    tooltip.style("top", event.pageY - 40 + "px").style("left", event.pageX + 15 + "px");
+                    tooltipHist.style("top", event.pageY - 40 + "px").style("left", event.pageX + 15 + "px");
                 })
                 .on("mouseout", function () {
                     d3.select(this).attr("fill", rectColor);
-                    tooltip.style("visibility", "hidden");
+                    tooltipHist.style("visibility", "hidden");
                 });
 
             // x-axis
             svg.append("g")
                 .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom(x))
+                .call(d3.axisBottom(x)
+                    .tickValues(filteredXTicks)
+                    .tickFormat(d=>`${(d as number)/10000}만원`)
+                )
                 .selectAll("text")
                 .attr("transform", "rotate(-30)")
                 .style("text-anchor", "end");

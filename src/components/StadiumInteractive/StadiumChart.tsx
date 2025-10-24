@@ -25,6 +25,7 @@ useEffect(() => {
   const svg = d3.select(svgRef.current);
 
   svg.selectAll("*").remove(); // clear previous
+  
   svg.attr("style","")
     .style("background", `url('/img/stadiums/${game.stadium}.png`)
     .style("background-size", "cover");
@@ -68,9 +69,9 @@ useEffect(() => {
         .html(`
           <strong>구역:</strong> ${d.구역}<br>
           <strong>거래가격/원가 비율:</strong> ${info ? info["가격/원가 비율 (%)"] : "N/A"}%<br>
-          <strong>원가:</strong> ${info ? info["평균_원가"] : "N/A"}원<br>
-          <strong>평균 거래가격:</strong> ${info ? info["평균_가격"] : "N/A"}원<br>
-          <strong>중앙 거래가격:</strong> ${info ? info["중앙_가격"] : "N/A"}원<br>
+          <strong>원가:</strong> ${info ? Number(info["평균_원가"]).toLocaleString() : "N/A"}원<br>
+          <strong>평균 거래가격:</strong> ${info ? Number(info["평균_가격"]).toLocaleString() : "N/A"}원<br>
+          <strong>중앙 거래가격:</strong> ${info ? Number(info["중앙_가격"]).toLocaleString() : "N/A"}원<br>
           <strong>재판매 좌석 개수:</strong> ${info ? info["좌석_개수"] : "N/A"}개
         `)
         .style("left", event.pageX + 10 + "px")
@@ -122,9 +123,9 @@ useEffect(() => {
         .html(`
           <strong>구역:</strong> ${d.구역}<br>
           <strong>거래가격/원가 비율:</strong> ${info ? info["가격/원가 비율 (%)"] : "N/A"}%<br>
-          <strong>원가:</strong> ${info ? info["평균_원가"] : "N/A"}원<br>
-          <strong>평균 거래가격:</strong> ${info ? info["평균_가격"] : "N/A"}원<br>
-          <strong>중앙 거래가격:</strong> ${info ? info["중앙_가격"] : "N/A"}원<br>
+          <strong>원가:</strong> ${info ? Number(info["평균_원가"]).toLocaleString() : "N/A"}원<br>
+          <strong>평균 거래가격:</strong> ${info ? Number(info["평균_가격"]).toLocaleString() : "N/A"}원<br>
+          <strong>중앙 거래가격:</strong> ${info ? Number(info["중앙_가격"]).toLocaleString() : "N/A"}원<br>
           <strong>재판매 좌석 개수:</strong> ${info ? info["좌석_개수"] : "N/A"}개
         `)
         .style("left", event.pageX + 10 + "px")
