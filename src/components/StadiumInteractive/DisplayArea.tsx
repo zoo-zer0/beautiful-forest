@@ -12,7 +12,7 @@ interface Props {
 interface Props {
   game: Game | null;
   selectedSeat: Seat | null;
-  onSelect: (seat: Seat) => void;
+  onSelect: (seat: Seat | null) => void;
 }
 
 export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) => {

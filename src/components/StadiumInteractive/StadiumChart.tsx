@@ -7,7 +7,7 @@ interface Props {
   game: Game | null;
   stadiumData: Record<string, Seat[]>;
   categoryData: Record<string, CategoryInfo[]>;
-  onSelect: (seat: Seat) => void;
+  onSelect: (seat: Seat | null) => void;
 }
 
 export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData, onSelect }) => {
@@ -139,7 +139,9 @@ useEffect(() => {
   //handle click outside
     const handleClickOutside = (event: MouseEvent) => {
     const target = event.target as HTMLElement;
-
+    if (!target.closest("circle")) {
+      onSelect(null); // deselect seat
+    }
     // If click is NOT on a circle
     if (!target.closest("circle")) {
       selectedSeat = null;
