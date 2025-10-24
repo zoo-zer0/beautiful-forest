@@ -4,7 +4,7 @@ export interface PriceBin {
   value: number; // number of tickets in that range
   breakdown: {
     가격범위: string;
-    건수: string;
+    개수: string;
   };
 }
 
@@ -22,7 +22,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -30,7 +30,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -38,7 +38,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -46,7 +46,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -54,7 +54,7 @@ export const ticketData = {
         "value": 31,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "31건"
+          "개수": "31개"
         }
       },
       {
@@ -62,7 +62,7 @@ export const ticketData = {
         "value": 68,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "68건"
+          "개수": "68개"
         }
       },
       {
@@ -70,7 +70,7 @@ export const ticketData = {
         "value": 92,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "92건"
+          "개수": "92개"
         }
       },
       {
@@ -78,7 +78,7 @@ export const ticketData = {
         "value": 42,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "42건"
+          "개수": "42개"
         }
       },
       {
@@ -86,7 +86,7 @@ export const ticketData = {
         "value": 37,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "37건"
+          "개수": "37개"
         }
       },
       {
@@ -94,7 +94,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -102,7 +102,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -110,7 +110,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -118,7 +118,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -126,7 +126,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -134,7 +134,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -142,7 +142,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -150,7 +150,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -158,7 +158,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -166,7 +166,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -174,7 +174,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -184,7 +184,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -192,7 +192,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -200,7 +200,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -208,7 +208,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -216,7 +216,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -224,7 +224,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -232,7 +232,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -240,7 +240,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -248,7 +248,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -256,7 +256,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -264,7 +264,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -272,7 +272,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -280,7 +280,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -288,7 +288,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -296,7 +296,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -304,7 +304,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -312,7 +312,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -320,7 +320,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -328,7 +328,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -336,7 +336,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -346,7 +346,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -354,7 +354,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -362,7 +362,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -370,7 +370,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -378,7 +378,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -386,7 +386,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -394,7 +394,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -402,7 +402,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -410,7 +410,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -418,7 +418,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -426,7 +426,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -434,7 +434,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -442,7 +442,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -450,7 +450,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -458,7 +458,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -466,7 +466,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -474,7 +474,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -482,7 +482,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -490,7 +490,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -498,7 +498,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -508,7 +508,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -516,7 +516,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -524,7 +524,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -532,7 +532,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -540,7 +540,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -548,7 +548,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -556,7 +556,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -564,7 +564,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -572,7 +572,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -580,7 +580,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -588,7 +588,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -596,7 +596,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -604,7 +604,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -612,7 +612,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -620,7 +620,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -628,7 +628,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -636,7 +636,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -644,7 +644,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -652,7 +652,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -660,7 +660,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       }
     ],
@@ -670,7 +670,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -678,7 +678,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -686,7 +686,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -694,7 +694,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -702,7 +702,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -710,7 +710,7 @@ export const ticketData = {
         "value": 18,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "18건"
+          "개수": "18개"
         }
       },
       {
@@ -718,7 +718,7 @@ export const ticketData = {
         "value": 23,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "23건"
+          "개수": "23개"
         }
       },
       {
@@ -726,7 +726,7 @@ export const ticketData = {
         "value": 19,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "19건"
+          "개수": "19개"
         }
       },
       {
@@ -734,7 +734,7 @@ export const ticketData = {
         "value": 19,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "19건"
+          "개수": "19개"
         }
       },
       {
@@ -742,7 +742,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -750,7 +750,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -758,7 +758,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -766,7 +766,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -774,7 +774,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -782,7 +782,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -790,7 +790,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -798,7 +798,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -806,7 +806,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -814,7 +814,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -822,7 +822,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -832,7 +832,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -840,7 +840,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -848,7 +848,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -856,7 +856,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -864,7 +864,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -872,7 +872,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -880,7 +880,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -888,7 +888,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -896,7 +896,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -904,7 +904,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -912,7 +912,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -920,7 +920,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -928,7 +928,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -936,7 +936,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -944,7 +944,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -952,7 +952,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -960,7 +960,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -968,7 +968,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -976,7 +976,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -984,7 +984,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       }
     ],
@@ -994,7 +994,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1002,7 +1002,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1010,7 +1010,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1018,7 +1018,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1026,7 +1026,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1034,7 +1034,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1042,7 +1042,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1050,7 +1050,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1058,7 +1058,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1066,7 +1066,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1074,7 +1074,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1082,7 +1082,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1090,7 +1090,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1098,7 +1098,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1106,7 +1106,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1114,7 +1114,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1122,7 +1122,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1130,7 +1130,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1138,7 +1138,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1146,7 +1146,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1156,7 +1156,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1164,7 +1164,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1172,7 +1172,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1180,7 +1180,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1188,7 +1188,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1196,7 +1196,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1204,7 +1204,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1212,7 +1212,7 @@ export const ticketData = {
         "value": 19,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "19건"
+          "개수": "19개"
         }
       },
       {
@@ -1220,7 +1220,7 @@ export const ticketData = {
         "value": 17,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "17건"
+          "개수": "17개"
         }
       },
       {
@@ -1228,7 +1228,7 @@ export const ticketData = {
         "value": 19,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "19건"
+          "개수": "19개"
         }
       },
       {
@@ -1236,7 +1236,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -1244,7 +1244,7 @@ export const ticketData = {
         "value": 14,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "14건"
+          "개수": "14개"
         }
       },
       {
@@ -1252,7 +1252,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -1260,7 +1260,7 @@ export const ticketData = {
         "value": 27,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "27건"
+          "개수": "27개"
         }
       },
       {
@@ -1268,7 +1268,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -1276,7 +1276,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -1284,7 +1284,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -1292,7 +1292,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -1300,7 +1300,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -1308,7 +1308,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1318,7 +1318,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1326,7 +1326,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1334,7 +1334,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1342,7 +1342,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1350,7 +1350,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1358,7 +1358,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1366,7 +1366,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1374,7 +1374,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1382,7 +1382,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1390,7 +1390,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1398,7 +1398,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1406,7 +1406,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1414,7 +1414,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1422,7 +1422,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1430,7 +1430,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1438,7 +1438,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1446,7 +1446,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1454,7 +1454,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1462,7 +1462,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1470,7 +1470,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1480,7 +1480,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1488,7 +1488,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1496,7 +1496,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1504,7 +1504,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -1512,7 +1512,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -1520,7 +1520,7 @@ export const ticketData = {
         "value": 40,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "40건"
+          "개수": "40개"
         }
       },
       {
@@ -1528,7 +1528,7 @@ export const ticketData = {
         "value": 24,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "24건"
+          "개수": "24개"
         }
       },
       {
@@ -1536,7 +1536,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -1544,7 +1544,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -1552,7 +1552,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1560,7 +1560,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1568,7 +1568,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1576,7 +1576,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1584,7 +1584,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1592,7 +1592,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1600,7 +1600,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1608,7 +1608,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1616,7 +1616,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1624,7 +1624,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1632,7 +1632,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1642,7 +1642,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1650,7 +1650,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1658,7 +1658,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1666,7 +1666,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1674,7 +1674,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1682,7 +1682,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1690,7 +1690,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1698,7 +1698,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1706,7 +1706,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1714,7 +1714,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1722,7 +1722,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -1730,7 +1730,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1738,7 +1738,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1746,7 +1746,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -1754,7 +1754,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1762,7 +1762,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1770,7 +1770,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1778,7 +1778,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1786,7 +1786,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1794,7 +1794,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1804,7 +1804,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1812,7 +1812,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1820,7 +1820,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1828,7 +1828,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1836,7 +1836,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1844,7 +1844,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1852,7 +1852,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1860,7 +1860,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1868,7 +1868,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1876,7 +1876,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1884,7 +1884,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1892,7 +1892,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -1900,7 +1900,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1908,7 +1908,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -1916,7 +1916,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1924,7 +1924,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1932,7 +1932,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1940,7 +1940,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1948,7 +1948,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1956,7 +1956,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -1966,7 +1966,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1974,7 +1974,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1982,7 +1982,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1990,7 +1990,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -1998,7 +1998,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2006,7 +2006,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2014,7 +2014,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2022,7 +2022,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2030,7 +2030,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2038,7 +2038,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2046,7 +2046,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2054,7 +2054,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2062,7 +2062,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2070,7 +2070,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2078,7 +2078,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2086,7 +2086,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2094,7 +2094,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2102,7 +2102,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2110,7 +2110,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2118,7 +2118,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2128,7 +2128,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2136,7 +2136,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2144,7 +2144,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2152,7 +2152,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2160,7 +2160,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2168,7 +2168,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2176,7 +2176,7 @@ export const ticketData = {
         "value": 10,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "10건"
+          "개수": "10개"
         }
       },
       {
@@ -2184,7 +2184,7 @@ export const ticketData = {
         "value": 23,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "23건"
+          "개수": "23개"
         }
       },
       {
@@ -2192,7 +2192,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -2200,7 +2200,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -2208,7 +2208,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -2216,7 +2216,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -2224,7 +2224,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2232,7 +2232,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2240,7 +2240,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2248,7 +2248,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2256,7 +2256,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2264,7 +2264,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2272,7 +2272,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2280,7 +2280,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2290,7 +2290,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2298,7 +2298,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2306,7 +2306,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2314,7 +2314,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2322,7 +2322,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2330,7 +2330,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2338,7 +2338,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2346,7 +2346,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -2354,7 +2354,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -2362,7 +2362,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -2370,7 +2370,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -2378,7 +2378,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -2386,7 +2386,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2394,7 +2394,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -2402,7 +2402,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2410,7 +2410,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2418,7 +2418,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2426,7 +2426,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2434,7 +2434,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -2442,7 +2442,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2452,7 +2452,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2460,7 +2460,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2468,7 +2468,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2476,7 +2476,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2484,7 +2484,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2492,7 +2492,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -2500,7 +2500,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2508,7 +2508,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -2516,7 +2516,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2524,7 +2524,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2532,7 +2532,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2540,7 +2540,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2548,7 +2548,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2556,7 +2556,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2564,7 +2564,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2572,7 +2572,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2580,7 +2580,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2588,7 +2588,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2596,7 +2596,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2604,7 +2604,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2614,7 +2614,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2622,7 +2622,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2630,7 +2630,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2638,7 +2638,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2646,7 +2646,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -2654,7 +2654,7 @@ export const ticketData = {
         "value": 15,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "15건"
+          "개수": "15개"
         }
       },
       {
@@ -2662,7 +2662,7 @@ export const ticketData = {
         "value": 25,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "25건"
+          "개수": "25개"
         }
       },
       {
@@ -2670,7 +2670,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -2678,7 +2678,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -2686,7 +2686,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -2694,7 +2694,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -2702,7 +2702,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -2710,7 +2710,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2718,7 +2718,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2726,7 +2726,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2734,7 +2734,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2742,7 +2742,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2750,7 +2750,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2758,7 +2758,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2766,7 +2766,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2776,7 +2776,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2784,7 +2784,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2792,7 +2792,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2800,7 +2800,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2808,7 +2808,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2816,7 +2816,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2824,7 +2824,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2832,7 +2832,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -2840,7 +2840,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2848,7 +2848,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2856,7 +2856,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2864,7 +2864,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2872,7 +2872,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2880,7 +2880,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2888,7 +2888,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2896,7 +2896,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2904,7 +2904,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2912,7 +2912,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2920,7 +2920,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2928,7 +2928,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -2938,7 +2938,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2946,7 +2946,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2954,7 +2954,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2962,7 +2962,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2970,7 +2970,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2978,7 +2978,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -2986,7 +2986,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -2994,7 +2994,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3002,7 +3002,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3010,7 +3010,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3018,7 +3018,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3026,7 +3026,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3034,7 +3034,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3042,7 +3042,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3050,7 +3050,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3058,7 +3058,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3066,7 +3066,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3074,7 +3074,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3082,7 +3082,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3090,7 +3090,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -3100,7 +3100,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3108,7 +3108,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3116,7 +3116,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3124,7 +3124,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3132,7 +3132,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3140,7 +3140,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3148,7 +3148,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3156,7 +3156,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3164,7 +3164,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3172,7 +3172,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3180,7 +3180,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3188,7 +3188,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3196,7 +3196,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3204,7 +3204,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -3212,7 +3212,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -3220,7 +3220,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3228,7 +3228,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3236,7 +3236,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3244,7 +3244,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3252,7 +3252,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       }
     ],
@@ -3262,7 +3262,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3270,7 +3270,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3278,7 +3278,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3286,7 +3286,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3294,7 +3294,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3302,7 +3302,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3310,7 +3310,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3318,7 +3318,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3326,7 +3326,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3334,7 +3334,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3342,7 +3342,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3350,7 +3350,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3358,7 +3358,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3366,7 +3366,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3374,7 +3374,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3382,7 +3382,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3390,7 +3390,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3398,7 +3398,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3406,7 +3406,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3414,7 +3414,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -3424,7 +3424,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3432,7 +3432,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3440,7 +3440,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3448,7 +3448,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3456,7 +3456,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3464,7 +3464,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3472,7 +3472,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3480,7 +3480,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3488,7 +3488,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3496,7 +3496,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3504,7 +3504,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3512,7 +3512,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3520,7 +3520,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3528,7 +3528,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3536,7 +3536,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3544,7 +3544,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3552,7 +3552,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3560,7 +3560,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3568,7 +3568,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3576,7 +3576,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ]
@@ -3588,7 +3588,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3596,7 +3596,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3604,7 +3604,7 @@ export const ticketData = {
         "value": 71,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "71건"
+          "개수": "71개"
         }
       },
       {
@@ -3612,7 +3612,7 @@ export const ticketData = {
         "value": 80,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "80건"
+          "개수": "80개"
         }
       },
       {
@@ -3620,7 +3620,7 @@ export const ticketData = {
         "value": 117,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "117건"
+          "개수": "117개"
         }
       },
       {
@@ -3628,7 +3628,7 @@ export const ticketData = {
         "value": 119,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "119건"
+          "개수": "119개"
         }
       },
       {
@@ -3636,7 +3636,7 @@ export const ticketData = {
         "value": 105,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "105건"
+          "개수": "105개"
         }
       },
       {
@@ -3644,7 +3644,7 @@ export const ticketData = {
         "value": 54,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "54건"
+          "개수": "54개"
         }
       },
       {
@@ -3652,7 +3652,7 @@ export const ticketData = {
         "value": 27,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "27건"
+          "개수": "27개"
         }
       },
       {
@@ -3660,7 +3660,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -3668,7 +3668,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -3676,7 +3676,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -3684,7 +3684,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -3692,7 +3692,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3700,7 +3700,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3708,7 +3708,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3716,7 +3716,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3724,7 +3724,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3732,7 +3732,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3740,7 +3740,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -3750,7 +3750,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3758,7 +3758,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3766,7 +3766,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3774,7 +3774,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3782,7 +3782,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3790,7 +3790,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3798,7 +3798,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3806,7 +3806,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3814,7 +3814,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3822,7 +3822,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3830,7 +3830,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3838,7 +3838,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3846,7 +3846,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3854,7 +3854,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3862,7 +3862,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3870,7 +3870,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3878,7 +3878,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3886,7 +3886,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3894,7 +3894,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3902,7 +3902,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -3912,7 +3912,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -3920,7 +3920,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -3928,7 +3928,7 @@ export const ticketData = {
         "value": 25,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "25건"
+          "개수": "25개"
         }
       },
       {
@@ -3936,7 +3936,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -3944,7 +3944,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -3952,7 +3952,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -3960,7 +3960,7 @@ export const ticketData = {
         "value": 12,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "12건"
+          "개수": "12개"
         }
       },
       {
@@ -3968,7 +3968,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -3976,7 +3976,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -3984,7 +3984,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -3992,7 +3992,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4000,7 +4000,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4008,7 +4008,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4016,7 +4016,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4024,7 +4024,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4032,7 +4032,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4040,7 +4040,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4048,7 +4048,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4056,7 +4056,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4064,7 +4064,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -4074,7 +4074,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4082,7 +4082,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4090,7 +4090,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4098,7 +4098,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4106,7 +4106,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4114,7 +4114,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4122,7 +4122,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4130,7 +4130,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4138,7 +4138,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4146,7 +4146,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4154,7 +4154,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -4162,7 +4162,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4170,7 +4170,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4178,7 +4178,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4186,7 +4186,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4194,7 +4194,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4202,7 +4202,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4210,7 +4210,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4218,7 +4218,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4226,7 +4226,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -4236,7 +4236,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4244,7 +4244,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4252,7 +4252,7 @@ export const ticketData = {
         "value": 13,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "13건"
+          "개수": "13개"
         }
       },
       {
@@ -4260,7 +4260,7 @@ export const ticketData = {
         "value": 46,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "46건"
+          "개수": "46개"
         }
       },
       {
@@ -4268,7 +4268,7 @@ export const ticketData = {
         "value": 39,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "39건"
+          "개수": "39개"
         }
       },
       {
@@ -4276,7 +4276,7 @@ export const ticketData = {
         "value": 35,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "35건"
+          "개수": "35개"
         }
       },
       {
@@ -4284,7 +4284,7 @@ export const ticketData = {
         "value": 43,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "43건"
+          "개수": "43개"
         }
       },
       {
@@ -4292,7 +4292,7 @@ export const ticketData = {
         "value": 29,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "29건"
+          "개수": "29개"
         }
       },
       {
@@ -4300,7 +4300,7 @@ export const ticketData = {
         "value": 30,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "30건"
+          "개수": "30개"
         }
       },
       {
@@ -4308,7 +4308,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -4316,7 +4316,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -4324,7 +4324,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -4332,7 +4332,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -4340,7 +4340,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -4348,7 +4348,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4356,7 +4356,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4364,7 +4364,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4372,7 +4372,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4380,7 +4380,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4388,7 +4388,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -4398,7 +4398,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4406,7 +4406,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4414,7 +4414,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4422,7 +4422,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4430,7 +4430,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4438,7 +4438,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4446,7 +4446,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4454,7 +4454,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -4462,7 +4462,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -4470,7 +4470,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -4478,7 +4478,7 @@ export const ticketData = {
         "value": 15,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "15건"
+          "개수": "15개"
         }
       },
       {
@@ -4486,7 +4486,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -4494,7 +4494,7 @@ export const ticketData = {
         "value": 15,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "15건"
+          "개수": "15개"
         }
       },
       {
@@ -4502,7 +4502,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -4510,7 +4510,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -4518,7 +4518,7 @@ export const ticketData = {
         "value": 15,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "15건"
+          "개수": "15개"
         }
       },
       {
@@ -4526,7 +4526,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -4534,7 +4534,7 @@ export const ticketData = {
         "value": 10,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "10건"
+          "개수": "10개"
         }
       },
       {
@@ -4542,7 +4542,7 @@ export const ticketData = {
         "value": 25,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "25건"
+          "개수": "25개"
         }
       },
       {
@@ -4550,7 +4550,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       }
     ],
@@ -4560,7 +4560,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4568,7 +4568,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4576,7 +4576,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4584,7 +4584,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4592,7 +4592,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -4600,7 +4600,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4608,7 +4608,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -4616,7 +4616,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4624,7 +4624,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4632,7 +4632,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4640,7 +4640,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4648,7 +4648,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4656,7 +4656,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4664,7 +4664,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4672,7 +4672,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4680,7 +4680,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4688,7 +4688,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4696,7 +4696,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4704,7 +4704,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4712,7 +4712,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -4722,7 +4722,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4730,7 +4730,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4738,7 +4738,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4746,7 +4746,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4754,7 +4754,7 @@ export const ticketData = {
         "value": 16,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "16건"
+          "개수": "16개"
         }
       },
       {
@@ -4762,7 +4762,7 @@ export const ticketData = {
         "value": 28,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "28건"
+          "개수": "28개"
         }
       },
       {
@@ -4770,7 +4770,7 @@ export const ticketData = {
         "value": 36,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "36건"
+          "개수": "36개"
         }
       },
       {
@@ -4778,7 +4778,7 @@ export const ticketData = {
         "value": 24,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "24건"
+          "개수": "24개"
         }
       },
       {
@@ -4786,7 +4786,7 @@ export const ticketData = {
         "value": 34,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "34건"
+          "개수": "34개"
         }
       },
       {
@@ -4794,7 +4794,7 @@ export const ticketData = {
         "value": 25,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "25건"
+          "개수": "25개"
         }
       },
       {
@@ -4802,7 +4802,7 @@ export const ticketData = {
         "value": 40,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "40건"
+          "개수": "40개"
         }
       },
       {
@@ -4810,7 +4810,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -4818,7 +4818,7 @@ export const ticketData = {
         "value": 20,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "20건"
+          "개수": "20개"
         }
       },
       {
@@ -4826,7 +4826,7 @@ export const ticketData = {
         "value": 31,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "31건"
+          "개수": "31개"
         }
       },
       {
@@ -4834,7 +4834,7 @@ export const ticketData = {
         "value": 10,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "10건"
+          "개수": "10개"
         }
       },
       {
@@ -4842,7 +4842,7 @@ export const ticketData = {
         "value": 20,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "20건"
+          "개수": "20개"
         }
       },
       {
@@ -4850,7 +4850,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -4858,7 +4858,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -4866,7 +4866,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -4874,7 +4874,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -4884,7 +4884,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4892,7 +4892,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4900,7 +4900,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4908,7 +4908,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4916,7 +4916,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4924,7 +4924,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4932,7 +4932,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4940,7 +4940,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4948,7 +4948,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4956,7 +4956,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -4964,7 +4964,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4972,7 +4972,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4980,7 +4980,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4988,7 +4988,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -4996,7 +4996,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5004,7 +5004,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5012,7 +5012,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5020,7 +5020,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5028,7 +5028,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5036,7 +5036,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5046,7 +5046,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5054,7 +5054,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -5062,7 +5062,7 @@ export const ticketData = {
         "value": 47,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "47건"
+          "개수": "47개"
         }
       },
       {
@@ -5070,7 +5070,7 @@ export const ticketData = {
         "value": 65,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "65건"
+          "개수": "65개"
         }
       },
       {
@@ -5078,7 +5078,7 @@ export const ticketData = {
         "value": 69,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "69건"
+          "개수": "69개"
         }
       },
       {
@@ -5086,7 +5086,7 @@ export const ticketData = {
         "value": 38,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "38건"
+          "개수": "38개"
         }
       },
       {
@@ -5094,7 +5094,7 @@ export const ticketData = {
         "value": 14,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "14건"
+          "개수": "14개"
         }
       },
       {
@@ -5102,7 +5102,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -5110,7 +5110,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -5118,7 +5118,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5126,7 +5126,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5134,7 +5134,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5142,7 +5142,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5150,7 +5150,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5158,7 +5158,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5166,7 +5166,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5174,7 +5174,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5182,7 +5182,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5190,7 +5190,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5198,7 +5198,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5208,7 +5208,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5216,7 +5216,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5224,7 +5224,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5232,7 +5232,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5240,7 +5240,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5248,7 +5248,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5256,7 +5256,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5264,7 +5264,7 @@ export const ticketData = {
         "value": 14,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "14건"
+          "개수": "14개"
         }
       },
       {
@@ -5272,7 +5272,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -5280,7 +5280,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5288,7 +5288,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5296,7 +5296,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5304,7 +5304,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5312,7 +5312,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5320,7 +5320,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5328,7 +5328,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5336,7 +5336,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5344,7 +5344,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5352,7 +5352,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5360,7 +5360,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5370,7 +5370,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5378,7 +5378,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5386,7 +5386,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5394,7 +5394,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5402,7 +5402,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5410,7 +5410,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5418,7 +5418,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5426,7 +5426,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5434,7 +5434,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5442,7 +5442,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5450,7 +5450,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5458,7 +5458,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -5466,7 +5466,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5474,7 +5474,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5482,7 +5482,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5490,7 +5490,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5498,7 +5498,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5506,7 +5506,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5514,7 +5514,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5522,7 +5522,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5532,7 +5532,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5540,7 +5540,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5548,7 +5548,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5556,7 +5556,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5564,7 +5564,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -5572,7 +5572,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -5580,7 +5580,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5588,7 +5588,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -5596,7 +5596,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5604,7 +5604,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5612,7 +5612,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5620,7 +5620,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5628,7 +5628,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5636,7 +5636,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5644,7 +5644,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5652,7 +5652,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5660,7 +5660,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5668,7 +5668,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5676,7 +5676,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5684,7 +5684,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5694,7 +5694,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5702,7 +5702,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5710,7 +5710,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5718,7 +5718,7 @@ export const ticketData = {
         "value": 10,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "10건"
+          "개수": "10개"
         }
       },
       {
@@ -5726,7 +5726,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -5734,7 +5734,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -5742,7 +5742,7 @@ export const ticketData = {
         "value": 33,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "33건"
+          "개수": "33개"
         }
       },
       {
@@ -5750,7 +5750,7 @@ export const ticketData = {
         "value": 21,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "21건"
+          "개수": "21개"
         }
       },
       {
@@ -5758,7 +5758,7 @@ export const ticketData = {
         "value": 14,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "14건"
+          "개수": "14개"
         }
       },
       {
@@ -5766,7 +5766,7 @@ export const ticketData = {
         "value": 7,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "7건"
+          "개수": "7개"
         }
       },
       {
@@ -5774,7 +5774,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -5782,7 +5782,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -5790,7 +5790,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5798,7 +5798,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -5806,7 +5806,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5814,7 +5814,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5822,7 +5822,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5830,7 +5830,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5838,7 +5838,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5846,7 +5846,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -5856,7 +5856,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5864,7 +5864,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5872,7 +5872,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5880,7 +5880,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -5888,7 +5888,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -5896,7 +5896,7 @@ export const ticketData = {
         "value": 8,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "8건"
+          "개수": "8개"
         }
       },
       {
@@ -5904,7 +5904,7 @@ export const ticketData = {
         "value": 15,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "15건"
+          "개수": "15개"
         }
       },
       {
@@ -5912,7 +5912,7 @@ export const ticketData = {
         "value": 18,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "18건"
+          "개수": "18개"
         }
       },
       {
@@ -5920,7 +5920,7 @@ export const ticketData = {
         "value": 10,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "10건"
+          "개수": "10개"
         }
       },
       {
@@ -5928,7 +5928,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -5936,7 +5936,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -5944,7 +5944,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -5952,7 +5952,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -5960,7 +5960,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -5968,7 +5968,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5976,7 +5976,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5984,7 +5984,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -5992,7 +5992,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6000,7 +6000,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6008,7 +6008,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -6018,7 +6018,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6026,7 +6026,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6034,7 +6034,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6042,7 +6042,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6050,7 +6050,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6058,7 +6058,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -6066,7 +6066,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6074,7 +6074,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -6082,7 +6082,7 @@ export const ticketData = {
         "value": 6,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "6건"
+          "개수": "6개"
         }
       },
       {
@@ -6090,7 +6090,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6098,7 +6098,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6106,7 +6106,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6114,7 +6114,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6122,7 +6122,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6130,7 +6130,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6138,7 +6138,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6146,7 +6146,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6154,7 +6154,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6162,7 +6162,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6170,7 +6170,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -6180,7 +6180,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6188,7 +6188,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6196,7 +6196,7 @@ export const ticketData = {
         "value": 12,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "12건"
+          "개수": "12개"
         }
       },
       {
@@ -6204,7 +6204,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -6212,7 +6212,7 @@ export const ticketData = {
         "value": 12,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "12건"
+          "개수": "12개"
         }
       },
       {
@@ -6220,7 +6220,7 @@ export const ticketData = {
         "value": 38,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "38건"
+          "개수": "38개"
         }
       },
       {
@@ -6228,7 +6228,7 @@ export const ticketData = {
         "value": 23,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "23건"
+          "개수": "23개"
         }
       },
       {
@@ -6236,7 +6236,7 @@ export const ticketData = {
         "value": 11,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "11건"
+          "개수": "11개"
         }
       },
       {
@@ -6244,7 +6244,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6252,7 +6252,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6260,7 +6260,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -6268,7 +6268,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6276,7 +6276,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6284,7 +6284,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6292,7 +6292,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6300,7 +6300,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6308,7 +6308,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6316,7 +6316,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6324,7 +6324,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6332,7 +6332,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -6342,7 +6342,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6350,7 +6350,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6358,7 +6358,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -6366,7 +6366,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6374,7 +6374,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6382,7 +6382,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -6390,7 +6390,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6398,7 +6398,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6406,7 +6406,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -6414,7 +6414,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6422,7 +6422,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6430,7 +6430,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6438,7 +6438,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6446,7 +6446,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6454,7 +6454,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6462,7 +6462,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6470,7 +6470,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6478,7 +6478,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6486,7 +6486,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6494,7 +6494,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -6504,7 +6504,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6512,7 +6512,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6520,7 +6520,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6528,7 +6528,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6536,7 +6536,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6544,7 +6544,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6552,7 +6552,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6560,7 +6560,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6568,7 +6568,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -6576,7 +6576,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6584,7 +6584,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6592,7 +6592,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6600,7 +6600,7 @@ export const ticketData = {
         "value": 5,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "5건"
+          "개수": "5개"
         }
       },
       {
@@ -6608,7 +6608,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6616,7 +6616,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6624,7 +6624,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6632,7 +6632,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6640,7 +6640,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -6648,7 +6648,7 @@ export const ticketData = {
         "value": 9,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "9건"
+          "개수": "9개"
         }
       },
       {
@@ -6656,7 +6656,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       }
     ],
@@ -6666,7 +6666,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6674,7 +6674,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6682,7 +6682,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6690,7 +6690,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6698,7 +6698,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6706,7 +6706,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6714,7 +6714,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6722,7 +6722,7 @@ export const ticketData = {
         "value": 4,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "4건"
+          "개수": "4개"
         }
       },
       {
@@ -6730,7 +6730,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6738,7 +6738,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6746,7 +6746,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6754,7 +6754,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6762,7 +6762,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6770,7 +6770,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6778,7 +6778,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6786,7 +6786,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6794,7 +6794,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6802,7 +6802,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6810,7 +6810,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6818,7 +6818,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ],
@@ -6828,7 +6828,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "20000~30000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6836,7 +6836,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "30000~40000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6844,7 +6844,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "40000~50000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6852,7 +6852,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "50000~60000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6860,7 +6860,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "60000~70000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6868,7 +6868,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "70000~80000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6876,7 +6876,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "80000~90000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6884,7 +6884,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "90000~100000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6892,7 +6892,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "100000~110000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6900,7 +6900,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "110000~120000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6908,7 +6908,7 @@ export const ticketData = {
         "value": 3,
         "breakdown": {
           "가격범위": "120000~130000원",
-          "건수": "3건"
+          "개수": "3개"
         }
       },
       {
@@ -6916,7 +6916,7 @@ export const ticketData = {
         "value": 1,
         "breakdown": {
           "가격범위": "130000~140000원",
-          "건수": "1건"
+          "개수": "1개"
         }
       },
       {
@@ -6924,7 +6924,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "140000~150000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6932,7 +6932,7 @@ export const ticketData = {
         "value": 2,
         "breakdown": {
           "가격범위": "150000~160000원",
-          "건수": "2건"
+          "개수": "2개"
         }
       },
       {
@@ -6940,7 +6940,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "160000~170000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6948,7 +6948,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "170000~180000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6956,7 +6956,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "180000~190000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6964,7 +6964,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "190000~200000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6972,7 +6972,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "200000~210000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       },
       {
@@ -6980,7 +6980,7 @@ export const ticketData = {
         "value": 0,
         "breakdown": {
           "가격범위": "210000~220000원",
-          "건수": "0건"
+          "개수": "0개"
         }
       }
     ]
