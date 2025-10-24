@@ -3,67 +3,8 @@ import * as d3 from "d3";
 import type { Game, Seat, CategoryInfo } from "../types";
 import { colorPalette } from "../colors";
 import { categoryData } from "./data/category";
-/*interface Bin {
-    x0: number;
-    x1: number;
-    count: number;
-}*/
-const seatCategories = [
-  "SKY 상단지정석",
-  "SKY요기보패밀리존",
-  "SKY하단지정석",
-  "VIP석",
-  "내야지정석",
-  "내야테이블석",
-  "루프탑 테이블석",
-  "블루존",
-  "스윗박스",
-  "외야지정석",
-  "외야커플테이블석",
-  "외야테이블석",
-  "외야패밀리석",
-  "원정응원석",
-  "익사이팅석",
-  "잔디그린존",
-  "중앙 SKY 상단지정석",
-  "중앙 SKY하단지정석",
-  "중앙테이블석",
-  "캠핑존",
-  "파티플로어라이브",
-];
-
-// helper to generate 10 bins per seat over a large range
-function generateBins(minPrice: number, maxPrice: number): { name: string; value: number; breakdown: Record<string, string> }[] {
-  const bins = [];
-  const step = Math.floor((maxPrice - minPrice) / 20);
-  for (let i = 0; i < 20; i++) {
-    const x0 = minPrice + i * step;
-    const x1 = x0 + step;
-    const value = Math.floor(Math.random() * 500); // random ticket count
-    bins.push({
-      name: `${x0}~${x1}원`,
-      value,
-      breakdown: {
-        가격범위: `${x0}~${x1}원`,
-        건수: `${value}건`,
-      },
-    });
-  }
-  return bins;
-}
-
-// generate sample data
-const sampleTicketData: Record<string, Record<string, { name: string; value: number; breakdown: Record<string, string> }[]>> = {
-  "1": {},
-  "2": {},
-};
-
-seatCategories.forEach((seat) => {
-  sampleTicketData["1"][seat] = generateBins(20000, 220000);
-  sampleTicketData["2"][seat] = generateBins(20000, 220000);
-});
-
-console.log(sampleTicketData);
+import { ticketData } from "./data/tickets";
+import type { TicketData } from "./data/tickets";
 
 
 
@@ -149,20 +90,23 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .text(key);
         });
         } else {
-            const chartData = sampleTicketData[game.id]?.[selectedSeat.구역] || [];
+            const chartData: TicketData = ticketData;
+            const seatCategory = selectedSeat.구역;
 
-            if (chartData.length === 0) return;
+            const bins = chartData[game.id]?.[seatCategory];
+            if(!bins || bins.length === 0) return;
+            
 
             // x & y scales
             const x = d3
                 .scaleBand()
-                .domain(chartData.map(d => d.name))
+                .domain(bins.map(d => d.name))
                 .range([margin.left, width - margin.right])
                 .padding(0.01);
 
             const y = d3
                 .scaleLinear()
-                .domain([0, d3.max(chartData, d => d.value)! * 1.1])
+                .domain([0, 120])
                 .nice()
                 .range([height - margin.bottom, margin.top]);
 
@@ -182,7 +126,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
 
             // Bars
             svg.selectAll("rect")
-                .data(chartData)
+                .data(bins)
                 .enter()
                 .append("rect")
                 .attr("x", d => x(d.name)!)
