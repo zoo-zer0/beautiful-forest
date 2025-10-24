@@ -4,7 +4,7 @@ export interface Game {
   name: string;
   gameType: GameType;
   stadium: string;
-  data: number[]; // or whatever format your graph uses
+  title: string; // or whatever format your graph uses
 }
 
 export type GameType = '와일드카드' | '준플레이오프' | '플레이오프' | '한국시리즈';

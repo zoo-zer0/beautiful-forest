@@ -3,7 +3,7 @@ export const colorPalette = {
   gameTypeButton: {
     selectedBg: 'rgb(43, 63, 107)',  // dark blue
     selectedText: '#ffffffff', // white
-    defaultBg: 'rgb(123, 142, 169)', //lighter blue
+    defaultBg: 'rgba(43, 63, 107, 0.55)', //lighter blue
     defaultText: '#ffffffff', // dark text
   },
   gameButton:{

@@ -26,7 +26,7 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) =
         onSelect={onSelect}
         />
       </div>
-      <div style={{height: '400px', width: '600px'}}>
+      <div style={{height: '500px', width: '600px'}}>
         <StadiumGraph game={game}
         selectedSeat={selectedSeat}
         categoryData={categoryData}

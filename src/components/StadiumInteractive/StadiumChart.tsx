@@ -15,9 +15,8 @@ export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData,
 useEffect(() => {
   if (!game || !svgRef.current) return;
 
-  const data = stadiumData[game.stadium];
-  const category = categoryData[game.id];
-  if (!data || !category) return;
+  const data = stadiumData[game.stadium] || [];
+  const category = categoryData[game.id] || [];
 
   const width = 500;
   const height = 500;
@@ -26,7 +25,9 @@ useEffect(() => {
   const svg = d3.select(svgRef.current);
 
   svg.selectAll("*").remove(); // clear previous
-
+  svg.attr("style","")
+    .style("background", `url('/img/stadiums/${game.stadium}.png`)
+    .style("background-size", "cover");
   let selectedSeat: Seat | null = null; // <-- NEW
   
   // add stadium image as background
@@ -153,7 +154,7 @@ useEffect(() => {
     return ()=>{
     document.removeEventListener("click", handleClickOutside);
     };
-}, [game, stadiumData, categoryData, onSelect]);
+}, [game?.id, stadiumData, categoryData, onSelect]);
 
 
   return <> <svg ref={svgRef} width={500} height={500} style={{ backgroundColor: "#eee" }} /> </>;
