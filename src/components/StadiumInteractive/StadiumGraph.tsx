@@ -153,7 +153,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .domain([10000,460000])
                 .range([margin.left, width - margin.right]);
             const xTicks = d3.range(10000,450001, 10000);
-            const filteredXTicks = xTicks.filter((d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
+            const filteredXTicks = xTicks.filter((_d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
 
             const binWidth = x(10000+10000) - x(10000);
             const y = d3
