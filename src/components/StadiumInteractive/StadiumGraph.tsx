@@ -161,9 +161,19 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             const y = d3
                 .scaleLinear()
                 .domain([0, yMax])
-                .nice()
+//                .nice()
                 .range([height - margin.bottom, margin.top]);
+            const yAxis = d3.axisLeft(y)
+            .ticks(10)
+            .tickFormat((d) => {
+                // Replace last tick label with "100+"
+                if (d === yMax) return "100+";
+                return d.toString();
+            });
 
+            svg.append("g")
+            .attr("transform", `translate(${margin.left},0)`)
+            .call(yAxis);
             // Tooltip
             const rectColor = stadiumColors[`${game.stadium}`];
             // Bars
@@ -209,18 +219,18 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .style("text-anchor", "end");
 
             // y-axis
-            svg.append("g")
+         /*   svg.append("g")
                 .attr("transform", `translate(${margin.left},0)`)
-                .call(d3.axisLeft(y));
+                .call(d3.axisLeft(y));*/
             
             //append 100+ label
-            svg.append("text")
+ /*           svg.append("text")
             .attr("x", margin.left - 5)
             .attr("y", y(yMax) - 5)
             .attr("text-anchor", "end")
             .style("font-size", "12px")
             .style("font-weight", "bold")
-            .text("100+");
+            .text("100+");*/
             // Title
             svg.append("text")
                 .attr("x", width / 2)
