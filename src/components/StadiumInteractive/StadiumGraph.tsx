@@ -156,9 +156,11 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             const filteredXTicks = xTicks.filter((_d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
 
             const binWidth = x(10000+10000) - x(10000);
+            
+            const yMax=100;
             const y = d3
                 .scaleLinear()
-                .domain([0, 120])
+                .domain([0, yMax])
                 .nice()
                 .range([height - margin.bottom, margin.top]);
 
@@ -170,9 +172,10 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .enter()
                 .append("rect")
                 .attr("x", d => x(d.name))
-                .attr("y", d => y(d.value))
+
+                .attr("y", d => y(Math.min(d.value, yMax)))
                 .attr("width", binWidth)
-                .attr("height", d => y(0) - y(d.value))
+                .attr("height", d => y(0) - y(Math.min(d.value, yMax)))
                 .attr("fill", rectColor)
                 .on("mouseover", function (_event, d) {
                     d3.select(this).attr("fill", d3.color(rectColor)!.brighter(0.9).toString());
@@ -209,7 +212,15 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             svg.append("g")
                 .attr("transform", `translate(${margin.left},0)`)
                 .call(d3.axisLeft(y));
-
+            
+            //append 100+ label
+            svg.append("text")
+            .attr("x", margin.left - 5)
+            .attr("y", y(yMax) - 5)
+            .attr("text-anchor", "end")
+            .style("font-size", "12px")
+            .style("font-weight", "bold")
+            .text("100+");
             // Title
             svg.append("text")
                 .attr("x", width / 2)
