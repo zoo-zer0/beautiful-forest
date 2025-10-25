@@ -34,9 +34,9 @@ function StadiumInteractive() {
 
     {id: '12', name: '1차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 1차'},
     {id: '13', name: '2차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 2차'},
-    {id: '14', name: '3차 (미정)', gameType:'한국시리즈', stadium:'', title: '한국시리즈 3차'},
-    {id: '15', name: '4차 (미정)', gameType:'한국시리즈', stadium:'', title: '한국시리즈 4차'},
-    {id: '16', name: '5차 (미정)', gameType:'한국시리즈', stadium:'', title: '한국시리즈 5차'},
+    {id: '14', name: '3차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 3차'},
+    {id: '15', name: '4차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 4차'},
+    {id: '16', name: '5차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 5차'},
     {id: '17', name: '6차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 6차'},
     {id: '18', name: '7차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 7차'},
 
