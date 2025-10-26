@@ -39,7 +39,7 @@ export const ColorScale: React.FC<Props> = ({ game }) => {
       .attr("y2", "0%");
 
     gradient.append("stop").attr("offset", "0%").attr("stop-color", "white");
-    gradient.append("stop").attr("offset", "100%").attr("stop-color", stadiumColor);
+    gradient.append("stop").attr("offset", "100%").attr("stop-color", stadiumColor || stadiumColor);
 
     // Draw gradient rectangle
     svg

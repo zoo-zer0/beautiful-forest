@@ -7,10 +7,11 @@ interface Props {
   game: Game | null;
   stadiumData: Record<string, Seat[]>;
   categoryData: Record<string, CategoryInfo[]>;
+  selectedSeat: Seat | null; // <--- add this
   onSelect: (seat: Seat | null) => void;
 }
 
-export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData, onSelect }) => {
+export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData, selectedSeat, onSelect }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
 useEffect(() => {
 
@@ -181,6 +182,22 @@ useEffect(() => {
     document.removeEventListener("click", handleClickOutside);
     };
 }, [game?.id, stadiumData, categoryData, onSelect]);
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const svg = d3.select(svgRef.current);
+
+    // Reset all circles to normal stroke
+    svg.selectAll<SVGCircleElement, Seat>("circle")
+      .attr("stroke-width", 1.5);
+
+    // Highlight selected seat (by section name)
+    if (selectedSeat) {
+      svg.selectAll<SVGCircleElement, Seat>("circle")
+        .filter(d => d.구역 === selectedSeat.구역)
+        .attr("stroke-width", 3)
+        .attr("stroke", "#fcffc6ff");
+    }
+  }, [selectedSeat]);
 
 
   return <> <svg ref={svgRef} width={500} height={500} style={{ backgroundColor: "#eee" }} /> </>;

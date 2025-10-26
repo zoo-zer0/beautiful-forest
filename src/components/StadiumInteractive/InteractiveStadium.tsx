@@ -4,7 +4,7 @@ import GameTypeSelector from './GameTypeSelector.tsx'
 import { GameSelector } from './GameSelector.tsx';
 import { DisplayArea } from './DisplayArea.tsx';
 
-function StadiumInteractive() {
+function InteractiveStadium() {
   const [selectedGameType, setSelectedGameType] = useState<GameType | null>('와일드카드');
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   const [selectedSeat, setSelectedSeat] = useState<Seat | null>(null);
@@ -61,4 +61,4 @@ function StadiumInteractive() {
 }
 
 
-export default StadiumInteractive
+export default InteractiveStadium

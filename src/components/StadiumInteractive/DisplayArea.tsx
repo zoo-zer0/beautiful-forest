@@ -34,7 +34,9 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) =
             game={game}
             stadiumData={stadiums}
             categoryData={categoryData}
+            selectedSeat={selectedSeat}
             onSelect={onSelect}
+            
           />
         </div>
 

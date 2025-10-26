@@ -1,7 +1,7 @@
 import './App.css'
-import StadiumInteractive from './components/StadiumInteractive/StadiumInteractive.tsx';
+import InteractiveStadium from './components/StadiumInteractive/InteractiveStadium.tsx';
 import BarChart from './assets/BarChart.tsx';
-
+import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -121,8 +121,10 @@ function App() {
 
   return (
     <div>
-      <div style={{transform:"scale(1)"}}><StadiumInteractive /></div>
+      <div style={{transform:"scale(1)"}}><InteractiveStadium /></div>
       <br></br>
+      <ScrollytellingStadium />
+
       <h1>그래프 테스트</h1>
       <div style={{display:"flex", width: "100%"}}>
       <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
