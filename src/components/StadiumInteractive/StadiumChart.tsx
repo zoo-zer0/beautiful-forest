@@ -188,7 +188,8 @@ useEffect(() => {
 
     // Reset all circles to normal stroke
     svg.selectAll<SVGCircleElement, Seat>("circle")
-      .attr("stroke-width", 1.5);
+    .attr("stroke", "#ffffffff")
+    .attr("stroke-width", 1.5);
 
     // Highlight selected seat (by section name)
     if (selectedSeat) {
