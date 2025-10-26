@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 90%;
 }
 #tooltip {
     position: absolute;
@@ -26,13 +26,18 @@
     z-index: 10;
 }
 
-.scroll-box {
+.scroll-box p{
   width: 300px;
-  background-color: rgba(43, 63, 107, 0.601);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(86, 85, 94);
   text-align:left;
-  padding: 0.5px 10px;
-  border-radius: 8px;
+  padding: 1em;
+  border: 2px solid rgb(172, 172, 172);
+}
+
+.scroll-box p.active-step {
+  box-shadow: 0 4px 16px #8787874d;
+
 }
 
 .logo {

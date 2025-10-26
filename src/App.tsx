@@ -121,6 +121,7 @@ function App() {
 
   return (
     <div>
+      <h1>인터랙티브 구장</h1>
       <div style={{transform:"scale(1)"}}><InteractiveStadium /></div>
       <br></br>
       <ScrollytellingStadium />

@@ -28,7 +28,7 @@ export const ColorScale: React.FC<Props> = ({ game }) => {
     const stadiumColor = stadiumColors[game.stadium] || "red";
 
     // Vertical gradient
-    const gradientId = "color-gradient";
+    const gradientId = `color-gradient-${game.stadium}`;
     const defs = svg.append("defs");
     const gradient = defs
       .append("linearGradient")

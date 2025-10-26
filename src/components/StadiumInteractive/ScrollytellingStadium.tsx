@@ -26,26 +26,36 @@ function ScrollytellingStadium() {
         {/* Left column: scroll narrative */}
         <div style={{ flex: "0 0 200px" }}>
         <section ref={ref1} style={{ height: "100vh"}}>
+            <h1>스크롤리텔링</h1>
             <div className="scroll-box">
-            <p>Step: 1</p>
+            <p className={inView1 ? "active-step" : ""}>
+                Step: 1<br></br>
+                와일드카드 구장을 살펴보자
+            </p>
             </div>
         </section>
 
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
-            <p>Step: 2</p>
+            <p className={inView2 ? "active-step" : ""}>
+                Step: 2 <br></br>
+                여기는 SKY 상단지정석
+            </p>
             </div>
         </section>
 
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
-            <p>Step: 3</p>
+            <p className={inView3 ? "active-step" : ""}>
+                Step: 3 <br></br>
+                여기는 내야지정석
+            </p>
             </div>
         </section>
         </div>
 
         {/* Right column: sticky chart */}
-        <div style={{ position: "sticky", top: "10vh", height: "80vh", flex: 1 , transform:"scale(0.7)"}}>
+        <div style={{ position: "sticky", top: "10vh", height: "80vh", flex: 1 , transform:"scale(0.75)"}}>
         <ScrollyStadium
             selectedGameId="1"
             selectedSeat={activeSeat}
