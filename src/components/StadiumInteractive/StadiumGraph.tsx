@@ -6,6 +6,13 @@ import { categoryData } from "./data/category";
 import { ticketData } from "./data/tickets";
 import type { TicketData } from "./data/tickets";
 
+interface Bin {
+  name: number;
+  value: number;
+  breakdown?: Record<string, string>;
+}
+
+// inside your effect
 
 
 interface Props {
@@ -19,21 +26,19 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
     const ref = useRef<SVGSVGElement | null>(null);
     useEffect(()=>{
         if(!game || !ref.current) return;
-/*
-#tooltip {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 6px 10px;
-    border-radius: 4px;
-    pointer-events: none;
-    font-size: 12px;
-    text-align: left;
-    z-index:20;
-*/        
+        const svg = d3.select(ref.current);
+//        svg.selectAll("*").remove();
+        const width = 600;
+        const height = 500;
+        const margin = {top: 20, right: 20, bottom: 60, left: 60};
+        const primaryColor = colorPalette.primary;
+        const secondaryColor = colorPalette.secondary;
+
+        d3.selectAll(".tooltip-hist").remove();
+        d3.selectAll(".tooltip").remove();      
         const tooltip = d3
                 .select("body")
-                .append("div")
+                .append("div").attr("class", "tooltip")
                 .style("position", "absolute")
                 .style("background", "rgba(0, 0, 0, 0.7)")
                 .style("color", "white")
@@ -42,14 +47,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .style("font-size", "12px")
                 .style("visibility", "hidden")
                 .style("white-space", "pre-line");
-        const svg = d3.select(ref.current);
-        svg.selectAll("*").remove();
-        
-        const width = 600;
-        const height = 500;
-        const margin = {top: 20, right: 20, bottom: 60, left: 60};
-        const primaryColor = colorPalette.primary;
-        const secondaryColor = colorPalette.secondary;
+        svg.selectAll("*").remove();        
         if (selectedSeat===null){
             d3.select("body").selectAll("div.tooltip-hist").remove();
 
@@ -143,7 +141,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             const chartData: TicketData = ticketData;
             const seatCategory = selectedSeat.구역;
             const tooltipHist = tooltip.attr("class", "tooltip-hist")
-            const bins = chartData[game.id]?.[seatCategory];
+            const bins = chartData[game.id]?.[seatCategory] as Bin[];
             if(!bins || bins.length === 0) return;
             
 
@@ -155,37 +153,62 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             const xTicks = d3.range(10000,450001, 10000);
             const filteredXTicks = xTicks.filter((_d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
 
-            const binWidth = x(10000+10000) - x(10000);
-            
-            const yMax=100;
+            const rawMax = d3.max(bins, d => d.value) || 0;
+            const yMax = Math.max(10, Math.ceil(rawMax / 10) * 10); // always at least 10
+
             const y = d3
                 .scaleLinear()
                 .domain([0, yMax])
 //                .nice()
                 .range([height - margin.bottom, margin.top]);
             const yAxis = d3.axisLeft(y)
-            .ticks(10)
-            .tickFormat((d) => {
-                // Replace last tick label with "100+"
-                if (d === yMax) return "100+";
-                return d.toString();
-            });
+                .tickValues(d3.range(10, yMax + 1, 10)) // always 10, 20, 30, ...
+            //y axis
+const yAxisGroup = svg.selectAll<SVGGElement, unknown>(".y-axis")
+    .data([null])
+    .join("g")
+    .attr("class", "y-axis")
+    .attr("transform", `translate(${margin.left},0)`);
 
+// Call the axis normally
+yAxisGroup.call(yAxis);
+
+// Hide all ticks initially
+yAxisGroup.selectAll<SVGGElement, unknown>(".tick")
+    .style("opacity", 0)
+    .transition()
+    .duration(400)
+    .delay((d: any)=>{return (d/yMax)*400}) // stagger each tick by 200ms
+    .style("opacity", 1);
+
+            //x-axis
             svg.append("g")
-            .attr("transform", `translate(${margin.left},0)`)
-            .call(yAxis);
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x)
+                    .tickValues(filteredXTicks)
+                    .tickFormat(d=>`${(d as number)/10000}만원`)
+                )
+                .selectAll("text")
+                .attr("transform", "rotate(-30)")
+                .style("text-anchor", "end");        
+            const g = svg.selectAll(".hist-group")
+                .data([null])
+                .join("g")
+                .attr("class", "hist-group");
             // Tooltip
             const rectColor = stadiumColors[`${game.stadium}`];
             // Bars
-            svg.selectAll("rect")
-                .data(bins)
+            const bars = g.selectAll<SVGRectElement, Bin>("rect.bar")
+              .data(bins, d => d.name.toString()); // key function expects string
+
+            bars
                 .enter()
                 .append("rect")
                 .attr("x", d => x(d.name))
-
-                .attr("y", d => y(Math.min(d.value, yMax)))
-                .attr("width", binWidth)
-                .attr("height", d => y(0) - y(Math.min(d.value, yMax)))
+                .merge(bars)
+                .attr("y", y(0))
+                .attr("width", (x(20000)-x(10000)))
+                .attr("height", 0)
                 .attr("fill", rectColor)
                 .on("mouseover", function (_event, d) {
                     d3.select(this).attr("fill", d3.color(rectColor)!.brighter(0.9).toString());
@@ -204,20 +227,31 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 })
                 .on("mouseout", function () {
                     d3.select(this).attr("fill", rectColor);
-                    tooltipHist.style("visibility", "hidden");
-                });
-
-            // x-axis
-            svg.append("g")
-                .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom(x)
-                    .tickValues(filteredXTicks)
-                    .tickFormat(d=>`${(d as number)/10000}만원`)
+                    tooltipHist.style("visibility", "hidden")
+                })
+                .call(enter=>
+                    enter
+                        .transition()
+                        .duration(600)
+                        .attr("y",d=>y(Math.min(d.value, yMax)))
+                        .attr("height", d=>y(0)-y(Math.min(d.value, yMax)))
                 )
-                .selectAll("text")
-                .attr("transform", "rotate(-30)")
-                .style("text-anchor", "end");
+                bars.transition()
+                    .duration(600)
+                    .attr("x", d => x(d.name))
+                    .attr("y", d => y(Math.min(d.value, yMax)))
+                    .attr("height", d => y(0) - y(Math.min(d.value, yMax)));
 
+                // EXIT
+                bars.exit()
+                    .transition()
+                    .duration(300)
+                    .attr("y", y(0))
+                    .attr("height", 0)
+                    .remove();                
+
+            
+    
             // y-axis
          /*   svg.append("g")
                 .attr("transform", `translate(${margin.left},0)`)

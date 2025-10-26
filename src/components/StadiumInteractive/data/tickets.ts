@@ -12,7 +12,7 @@ export interface PriceBin {
 export type SeatCategoryData = Record<string, PriceBin[]>;
 
 // Each file ID (or date, depending on how you structure it) maps to seat categories
-export type TicketData = Record<string, SeatCategoryData>;
+export type TicketData = Record<string, SeatCategoryData> | null;
 
 export const ticketData = {
   "1": {

@@ -16,11 +16,11 @@ export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData,
 useEffect(() => {
 
   if (!game || !svgRef.current) return;
-  d3.selectAll(".tooltip, .tooltip-selected").remove();
+  d3.selectAll(".tooltip-chart, .tooltip-selected").remove();
 
   const tooltip = d3
                   .select("body")
-                  .append("div").attr("class","tooltip")
+                  .append("div").attr("class","tooltip-chart")
                   .style("position", "absolute")
                   .style("background", "rgba(0, 0, 0, 0.7)")
                   .style("color", "white")
