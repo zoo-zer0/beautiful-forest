@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const GameSelector: React.FC<Props> = ({ games, selectedGame, onSelect }) => (
-  <div id = "game-selector" style={{textAlign:'left', marginTop:'4px'}}>
+  <div id = "game-selector" style={{textAlign:'left', marginTop:'4px', maxWidth:"900px"}}>
     {games.map(game => (
       <button
         key={game.id}
