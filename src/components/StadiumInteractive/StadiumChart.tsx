@@ -13,15 +13,39 @@ interface Props {
 export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData, onSelect }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
 useEffect(() => {
-  if (!game || !svgRef.current) return;
 
+  if (!game || !svgRef.current) return;
+  d3.selectAll(".tooltip, .tooltip-selected").remove();
+
+  const tooltip = d3
+                  .select("body")
+                  .append("div").attr("class","tooltip")
+                  .style("position", "absolute")
+                  .style("background", "rgba(0, 0, 0, 0.7)")
+                  .style("color", "white")
+                  .style("padding", "6px 10px")
+                  .style("border-radius", "4px")
+                  .style("font-size", "12px")
+                  .style("z-index","10")
+                  .style("visibility", "hidden");
   const data = stadiumData[game.stadium] || [];
   const category = categoryData[game.id] || [];
 
   const width = 500;
   const height = 500;
-  const tooltip = d3.select("#tooltip");
-  const tooltipSelected = d3.select('#tooltip-selected');
+//  const tooltip = d3.select("#tooltip");
+  const tooltipSelected = d3
+                  .select("body")
+                  .append("div").attr("class","tooltip-selected")
+                  .style("position", "absolute")
+                  .style("background", "rgba(0, 0, 0, 0.7)")
+                  .style("color", "white")
+                  .style("padding", "6px 10px")
+                  .style("border-radius", "4px")
+                  .style("font-size", "12px")
+                  .style("visibility", "hidden");
+
+//  const tooltipSelected = d3.select('#tooltip-selected');
   const svg = d3.select(svgRef.current);
 
   svg.selectAll("*").remove(); // clear previous
@@ -65,7 +89,7 @@ useEffect(() => {
 
       const info = category.find(p => p.카테고리 === d.구역);
       tooltip
-        .style("display", "block")
+        .style("visibility", "visible")
         .html(`
           <strong>구역:</strong> ${d.구역}<br>
           <strong>거래가격/원가 비율:</strong> ${info ? info["가격/원가 비율 (%)"] : "N/A"}%<br>
@@ -100,7 +124,7 @@ useEffect(() => {
           .filter(p => p.구역 === d.구역)
           .attr("stroke-width", 1.5);
 
-        tooltip.style("display", "none");      
+        tooltip.style("visibility", "hidden");      
     })
     .on("click", function (event, d) {
       onSelect(d);
@@ -109,17 +133,17 @@ useEffect(() => {
       if (selectedSeat?.구역  === d.구역) {
         // Clicking again deselects
         selectedSeat = null;
-        tooltip.style("display", "none");
+        tooltip.style("visibility", "hidden");
         svg.selectAll<SVGCircleElement, Seat>("circle").attr("stroke-width", 1.5);
         return;
       }
 
       selectedSeat = d;
       const info = category.find(p => p.카테고리 === d.구역);
-      tooltip.style("display", "none");
+      tooltip.style("visibility", "hidden");
       // Keep tooltip visible at that spot
       tooltipSelected
-        .style("display", "block")
+        .style("visibility", "visible")
         .html(`
           <strong>구역:</strong> ${d.구역}<br>
           <strong>거래가격/원가 비율:</strong> ${info ? info["가격/원가 비율 (%)"] : "N/A"}%<br>
@@ -143,11 +167,12 @@ useEffect(() => {
     const target = event.target as HTMLElement;
     if (!target.closest("circle")) {
       onSelect(null); // deselect seat
+
     }
     // If click is NOT on a circle
     if (!target.closest("circle")) {
       selectedSeat = null;
-      tooltipSelected.style("display", "none");
+      tooltipSelected.style("visibility", "hidden");
       svg.selectAll<SVGCircleElement, Seat>("circle").attr("stroke-width", 1.5);
     }
     };

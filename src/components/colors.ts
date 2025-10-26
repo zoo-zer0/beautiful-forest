@@ -21,4 +21,5 @@ export const stadiumColors: Record<string, string> = {
   "samsung": "#063b7dff",
   "hanhwa": "#fc4e00",
   "lg": "rgb(165, 0, 52)",
+  "ssg": "#CE0E2D"
 };

@@ -121,7 +121,7 @@ function App() {
 
   return (
     <div>
-      <StadiumInteractive />
+      <div style={{transform:"scale(1)"}}><StadiumInteractive /></div>
       <br></br>
       <h1>그래프 테스트</h1>
       <div style={{display:"flex", width: "100%"}}>

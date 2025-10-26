@@ -63,11 +63,11 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             const x0 = d3.scaleBand()
                 .domain(data.map(d=>d.카테고리))
                 .range([margin.left, width-margin.right])
-                .paddingInner(0.2);
+                .paddingInner(0.1);
             const x1 = d3.scaleBand()
                 .domain(['평균_원가', "평균_가격"])
                 .range([0, x0.bandwidth()])
-                .padding(0.1);
+                .padding(0.01);
             const y = d3.scaleLinear()
                 .domain([0, d3.max(data, d=>Math.max(d.평균_가격, d.평균_원가))! * 1.1])
                 .nice()
