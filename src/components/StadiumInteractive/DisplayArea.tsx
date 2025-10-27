@@ -44,7 +44,7 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) =
         <div
           style={{
             position: "absolute",
-            top: 50, // adjust as needed
+            top: "10px", // adjust as needed
             zIndex: 10, // ensures it is on top
           }}
         >
