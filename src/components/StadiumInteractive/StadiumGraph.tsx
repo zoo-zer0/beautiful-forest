@@ -148,13 +148,13 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
             // x & y scales
             const x = d3
                 .scaleLinear()
-                .domain([10000,460000])
+                .domain([10000,1000000])
                 .range([margin.left, width - margin.right]);
-            const xTicks = d3.range(10000,450001, 10000);
+            const xTicks = d3.range(10000,1000001, 10000);
             const filteredXTicks = xTicks.filter((_d, i) => ((i+1) % 5 === 0)); // show every 5th tick (1, 5, 10...)
 
             const rawMax = d3.max(bins, d => d.value) || 0;
-            const yMax = Math.max(10, Math.ceil(rawMax / 10) * 10); // always at least 10
+            const yMax = Math.max(80, Math.ceil(rawMax / 10) * 10); // always at least 10
 
             const y = d3
                 .scaleLinear()
