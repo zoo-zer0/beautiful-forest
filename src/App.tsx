@@ -2,6 +2,7 @@ import './App.css'
 import InteractiveStadium from './components/StadiumInteractive/InteractiveStadium.tsx';
 import BarChart from './assets/BarChart.tsx';
 import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
+import DesktopNotice from './components/DesktopNotice.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -121,6 +122,7 @@ function App() {
 
   return (
     <div>
+      <DesktopNotice />
       <h1>인터랙티브 구장</h1>
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
       <br></br>
