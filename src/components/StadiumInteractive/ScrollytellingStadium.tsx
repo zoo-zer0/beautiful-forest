@@ -26,11 +26,19 @@ function ScrollytellingStadium() {
   }, [inView1, inView2, inView3, inView4]);
 
     return (
-    <div style={{ display: "flex", width:"100%", margin:0, padding:0, alignItems:"stretch"}}>
-        {/* Left column: scroll narrative */}
-        <div style={{ flex: "0 0 200px"}}>
+    <div className="scrolly">
+        <div className="sticky">
+            <div className="scrollyStadium">
+                <ScrollyStadium
+                    selectedGameId="5"
+                    selectedSeat={activeSeat}
+                    onSelectSeat={setActiveSeat}
+                />
+                </div>
+        </div>
+        
+        <div className="scrolly_narrative_center">
         <section ref={ref1} style={{ height: "100vh"}}>
-            <h1>스크롤리텔링</h1>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
                 Step: 1<br></br>
@@ -69,17 +77,7 @@ function ScrollytellingStadium() {
 
         </div>
 
-        {/* Right column: sticky chart */}
-        <div style={{width:"75%", height:"75%", position: "sticky", top: "10vh", flex: 1, margin:0, padding:0}}>
-        <div style={{transform:"scale(0.97)", transformOrigin:"center"}}>
-        <ScrollyStadium
-            selectedGameId="5"
-            selectedSeat={activeSeat}
-            onSelectSeat={setActiveSeat}
-            
-        />
-        </div>
-        </div>
+
     </div>
     );
 }

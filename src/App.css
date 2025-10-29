@@ -28,9 +28,28 @@
     z-index: 10;
 }
 
+.scrolly_narrative_left {
+  position: relative;
+}
+.scrolly_narrative_center {
+  position: relative;
+  justify-items: center;
+}
+.sticky {
+  position:-webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+.sticky_right {
+  position:-webkit-sticky;
+  position: sticky;
+  top: 50px;
+  justify-self: right;
+}
+
 .scroll-box p{
   width: 300px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.904);
   color: rgb(86, 85, 94);
   text-align:left;
   padding: 1em;
@@ -40,6 +59,10 @@
 .scroll-box p.active-step {
   box-shadow: 0 4px 16px #8787874d;
 
+}
+.scrollyStadium {
+  transform: scale(1);
+  transform-origin: center;
 }
 
 .logo {

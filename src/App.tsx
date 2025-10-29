@@ -3,6 +3,7 @@ import InteractiveStadium from './components/StadiumInteractive/InteractiveStadi
 import BarChart from './assets/BarChart.tsx';
 import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
 import DesktopNotice from './components/DesktopNotice.tsx';
+import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -127,8 +128,10 @@ function App() {
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
       <br></br>
       <ScrollytellingStadium />
+      <TimeScrollytelling />
 
       <h1>그래프 테스트</h1>
+      
       <div style={{display:"flex", width: "100%"}}>
       <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
       <BarChart data={sampleData2} width={500} height={400} title={"문화예술분야 암표 신고 접수 현황"}/>
