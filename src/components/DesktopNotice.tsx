@@ -26,7 +26,7 @@ const DesktopNotice: React.FC = () => {
 <p style={{ fontSize: "3.5rem", color: "#555" }}>
   모바일에서는 일부 기능이 제대로 표시되지 않을 수 있습니다.
   <br />
-  <a href="https://brunch.co.kr/">브런치</a>에서 스토리를 읽어보세요.
+  <a href="https://brunch.co.kr/">브런치</a>에서 기사를 읽어보세요.
 </p>
 
     </div>
