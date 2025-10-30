@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { TimeGraph } from "./TimeGraph";
+import { SusGraph } from "./SusGraph";
 
-
-function TimeScrollytelling() {
+function SusScrolly() {
   const [step, setStep] = useState<number | null>(null);
 
   const { ref: ref1, inView: inView1 } = useInView({ threshold: 0.5 });
@@ -28,29 +27,28 @@ function TimeScrollytelling() {
                 top: 10,        // distance from top of container
                 left: 20,       // distance from left
                 margin: 0,
-            }}>티켓 거래 속에 드러난 수상한 흔적</h2>
-            <TimeGraph OnStep={step} />
+            }}>쫌쫌따리 예시</h2>
+            <SusGraph OnStep={step} />
             </div>
         </div>
         <div className="scrolly_narrative_left">
         <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
-                와일드카드 1차전 공식 예매가 시작된 오후 2시 이후 1시간을 살펴보겠습니다. (1시간이 그래프 이쁘게 나옴)
+                와일드카드 1차전 공식 예매가 시작된 오후 2시 이후 첫 30분을 살펴보겠습니다.
             </p>
             </div>
         </section>
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
-                1시간만에 티켓베이에 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>XX개</mark>의 매물이 올라왔습니다.
+                30분만에 티켓베이에 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>XX개</mark>의 매물이 올라왔습니다.
             </p>
             </div>
         </section>
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView3 ? "active-step" : ""}>
-                (이건 렌덤으로 찍음) <br></br>
                 그 중 A씨(ID: XXXX)는 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.1em",fontWeight: inView3 ? "bold" : "normal"}}>XX개</mark>나 올렸습니다.
             </p>
             </div>
@@ -67,4 +65,4 @@ function TimeScrollytelling() {
     );
 }
 
-export default TimeScrollytelling;
+export default SusScrolly;

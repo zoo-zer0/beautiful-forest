@@ -5,6 +5,7 @@ import ScrollytellingStadium from './components/StadiumInteractive/Scrollytellin
 import DesktopNotice from './components/DesktopNotice.tsx';
 import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 import Kakao from './components/Kakao.tsx';
+import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -132,6 +133,7 @@ function App() {
       <DesktopNotice />
 
       <TimeScrollytelling />
+      <SusScrolly />
       <h1>그래프 테스트</h1>
       <div style={{display:"flex", width: "100%"}}>
         <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
