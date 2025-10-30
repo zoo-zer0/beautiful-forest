@@ -37,7 +37,6 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect, scr
               stadiumData={stadiums}
               categoryData={categoryData}
               selectedSeat={selectedSeat}
-              onSelect={onSelect}
             />
           ) : (
             <StadiumChart

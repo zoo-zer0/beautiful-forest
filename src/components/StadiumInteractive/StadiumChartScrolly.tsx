@@ -8,10 +8,9 @@ interface Props {
   stadiumData: Record<string, Seat[]>;
   categoryData: Record<string, CategoryInfo[]>;
   selectedSeat: Seat | null;
-  onSelect: (seat: Seat | null) => void;
 }
 
-export const StadiumChartScrolly: React.FC<Props> = ({ game, stadiumData, categoryData, selectedSeat, onSelect }) => {
+export const StadiumChartScrolly: React.FC<Props> = ({ game, stadiumData, categoryData, selectedSeat }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const width = 500;
   const height = width;
