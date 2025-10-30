@@ -6,7 +6,8 @@ interface Props {
 
 export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
-
+    const width = 800;
+    const height = 550;
   useEffect(() => {
     const data = [
         { time: new Date("2025-10-05T14:06:00Z"), sus: 0 },
@@ -438,8 +439,7 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
     ];
     const color = "rgba(139, 161, 210, 1)";
 
-    const width = 600;
-    const height = 600;
+
     const margin = { top: 20, right: 20, bottom: 20, left: 50 };
 
     const svg = d3
@@ -458,7 +458,7 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
       .scaleUtc()
       .domain([
         new Date("2025-10-05T14:00:00Z"),
-        new Date("2025-10-05T14:30:00Z"),
+        new Date("2025-10-05T15:00:00Z"),
       ])
       .range([margin.left, width - margin.right]);
     
@@ -467,7 +467,6 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
 //    svg.selectAll(".dot").remove();
 
     // Transition settings
-    const t = d3.transition().duration(500);
 
     if (OnStep === 1) {
               svg.selectAll("*").remove();
@@ -477,14 +476,12 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
         .append("g")
         .attr("class", "x-axis")
         .attr("transform", `translate(0,${height - margin.bottom})`)
-        .style("opacity", 0)
         .style("stroke-width", 1.5)
         .call(d3.axisBottom(x));
     axisGroup.selectAll("text")
         .style("font-size", "12px")
         .style("font", "sans-serif")
         .style("fill", "#333"); 
-      axisGroup.transition(t).call(d3.axisBottom(x)).style("opacity", 1);
     
 
     //arrow pointing
@@ -516,7 +513,7 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
             .attr("stroke-width", 2)
             .attr("marker-end", "url(#arrowhead)") // ✅ valid on SVG element
             .style("opacity", 0)
-            .transition(t)
+            .transition().duration(800)
             .style("opacity", 1);
 
         // Add label text above arrow
@@ -530,7 +527,7 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
             .style("fill", "#333")
             .text("예매시작")
             .style("opacity", 0)
-            .transition(t)
+            .transition().duration(800)
             .style("opacity", 1);
     }
 
@@ -551,7 +548,7 @@ if (OnStep === 2) {
       });
     });
   });
-  const gap = 13; // distance between stacked dots
+  const gap = 11; // distance between stacked dots
 
   // Step 2: Add dots with transition
   const dots = svg
@@ -561,16 +558,16 @@ if (OnStep === 2) {
     .attr("class", "dot")
     .attr("cx", (d) => x(d.time))
     .attr("cy", (d)=>height - margin.bottom -10- d.stack * gap)
-    .attr("r", 0)
+    .attr("r", 2)
     .attr("opacity", 0)
     .attr("fill", color);
 
   dots
-    .transition(t)
+    .transition().duration(600)
     .attr("cx", (d) => x(d.time))
-    .attr("r",6)
+    .attr("r",5)
     .attr("opacity", 1)
-    .delay((_, i) => i * 3); // staggered appearance
+    .delay((_, i) => i * 2); // staggered appearance
 }
 if (OnStep==3){
     svg.selectAll<SVGCircleElement, any>(".dot")
@@ -582,8 +579,8 @@ if (OnStep==3){
   return (
     <svg
       ref={svgRef}
-      width={600}
-      height={600}
+      width={width}
+      height={height}
       style={{ backgroundColor: "#ffffffff" }}
     />
   );

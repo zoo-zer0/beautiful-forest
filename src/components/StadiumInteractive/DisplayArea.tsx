@@ -5,7 +5,7 @@ import { categoryData } from "./data/category.ts";
 import { StadiumChart } from "./StadiumChart.tsx";
 import { StadiumGraph } from "./StadiumGraph.tsx";
 import { ColorScale } from './ColorScale.tsx';
-
+import { StadiumChartScrolly } from './StadiumChartScrolly.tsx';
 interface Props {
   game: Game | null;
 }
@@ -31,14 +31,23 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect, scr
         height: "500px",
       }}>
         <div style={{ width: "100%", height: "100%" }}>
-          <StadiumChart
-            game={game}
-            stadiumData={stadiums}
-            categoryData={categoryData}
-            selectedSeat={selectedSeat}
-            onSelect={onSelect}
-            
-          />
+          {scrolly ? (
+            <StadiumChartScrolly
+              game={game}
+              stadiumData={stadiums}
+              categoryData={categoryData}
+              selectedSeat={selectedSeat}
+              onSelect={onSelect}
+            />
+          ) : (
+            <StadiumChart
+              game={game}
+              stadiumData={stadiums}
+              categoryData={categoryData}
+              selectedSeat={selectedSeat}
+              onSelect={onSelect}
+            />
+          )}
         </div>
 
         {/* Color scale overlay */}

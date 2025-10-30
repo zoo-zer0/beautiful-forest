@@ -76,6 +76,7 @@ useEffect(() => {
     .data(data)
     .enter()
     .append("circle")
+    .attr("id",d=>`${d.x}-${d.y}`)
     .attr("cx", d => xScale(d.x))
     .attr("cy", d => yScale(d.y))
     .attr("r", 5.5)

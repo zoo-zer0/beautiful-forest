@@ -7,6 +7,7 @@
 }
 #tooltip {
     position: absolute;
+    visibility: hidden;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 6px 10px;
@@ -16,8 +17,10 @@
     text-align: left;
     z-index:20;
 }
+
 #tooltip-selected {
     position: absolute;
+    visibility: hidden;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 6px 10px;
@@ -54,6 +57,7 @@
   text-align:left;
   padding: 1em;
   border: 2px solid rgb(172, 172, 172);
+  z-index: 10;
 }
 
 .scroll-box p.active-step {

@@ -52,8 +52,7 @@ function InteractiveStadium() {
       <GameTypeSelector selectedGameType={selectedGameType} onSelect={handleGameTypeSelect} />
       <div>
       <DisplayArea game={selectedGame} selectedSeat={selectedSeat} onSelect={setSelectedSeat} scrolly={false} />
-      <div id="tooltip" style={{display:"none"}}></div>
-      <div id="tooltip-selected" style={{display:"none"}}></div>
+
       <GameSelector games={filteredGames} selectedGame={selectedGame} onSelect={handleGameSelect} />
       </div>
     </div>

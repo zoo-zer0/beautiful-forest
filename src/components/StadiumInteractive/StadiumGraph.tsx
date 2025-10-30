@@ -25,13 +25,14 @@ interface Props {
 }
 
 export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>{
+    const width = 600;
+    const height = 500;
     const ref = useRef<SVGSVGElement | null>(null);
     useEffect(()=>{
         if(!game || !ref.current) return;
         const svg = d3.select(ref.current);
 //        svg.selectAll("*").remove();
-        const width = 600;
-        const height = 500;
+
         const margin = {top: 20, right: 20, bottom: 60, left: 60};
         const primaryColor = colorPalette.primary;
         const secondaryColor = colorPalette.secondary;
@@ -279,6 +280,6 @@ yAxisGroup.selectAll<SVGGElement, unknown>(".tick")
                 .text(`${game.title}: ${selectedSeat.구역} 재판매 가격 분포`);            
         }
     }, [game, selectedSeat, categoryData]);
-    return <svg ref={ref} width={600} height={500} style={{ backgroundColor: "#ffffffff" }}></svg>;
+    return <svg ref={ref} width={width} height={height} style={{ backgroundColor: "#ffffffff" }}></svg>;
 
 }
