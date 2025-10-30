@@ -41,7 +41,7 @@ function ScrollytellingStadium() {
 
     return (
     <div className="scrolly">
-        <div style={{top:"150px"}} className="sticky">
+        <div style={{top:"50px"}} className="sticky">
             <h2>현황(?)</h2>
             <div className="scrollyStadium">
                 <ScrollyStadium
