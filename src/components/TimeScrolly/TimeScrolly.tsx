@@ -33,7 +33,7 @@ function TimeScrollytelling() {
             </div>
         </div>
         <div className="scrolly_narrative_left">
-        <section ref={ref1} style={{marginTop:"-50vh", height: "100vh"}}>
+        <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
                 와일드카드 1차전 공식 예매가 시작된 오후 2시 이후 첫 30분을 살펴보겠습니다.

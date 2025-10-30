@@ -53,7 +53,7 @@ function ScrollytellingStadium() {
         </div>
         
         <div className="scrolly_narrative_center">
-        <section ref={ref1} style={{marginTop:"-50vh", height: "100vh"}}>
+        <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
                 Step: 1<br></br>
