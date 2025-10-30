@@ -15,9 +15,10 @@ interface Props {
   game: Game | null;
   selectedSeat: Seat | null;
   onSelect: (seat: Seat | null) => void;
+  scrolly: boolean | null;
 }
 
-export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) => {
+export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect, scrolly }) => {
   if (!game) return <div>Select a game</div>;
   return (
     <div id='display-area' style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
@@ -55,6 +56,7 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect }) =
         <StadiumGraph game={game}
         selectedSeat={selectedSeat}
         categoryData={categoryData}
+        scrolly={scrolly}
         />
       </div>
     </div>

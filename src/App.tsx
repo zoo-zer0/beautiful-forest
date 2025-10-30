@@ -123,18 +123,16 @@ function App() {
 
   return (
     <div>
+
       <DesktopNotice />
       <h1>인터랙티브 구장</h1>
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
-      <br></br>
-      <ScrollytellingStadium />
+      <ScrollytellingStadium />      
       <TimeScrollytelling />
-
       <h1>그래프 테스트</h1>
-      
       <div style={{display:"flex", width: "100%"}}>
-      <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
-      <BarChart data={sampleData2} width={500} height={400} title={"문화예술분야 암표 신고 접수 현황"}/>
+        <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
+        <BarChart data={sampleData2} width={500} height={400} title={"문화예술분야 암표 신고 접수 현황"}/>
       </div>
     </div>
   );

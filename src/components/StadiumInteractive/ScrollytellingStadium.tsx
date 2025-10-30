@@ -38,7 +38,7 @@ function ScrollytellingStadium() {
         </div>
         
         <div className="scrolly_narrative_center">
-        <section ref={ref1} style={{ height: "100vh"}}>
+        <section ref={ref1} style={{marginTop:"-50vh", height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
                 Step: 1<br></br>
@@ -51,7 +51,7 @@ function ScrollytellingStadium() {
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
                 Step: 2 <br></br>
-                여기는 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em"}}><strong>SKY 상단지정석.</strong> </mark><br></br>
+                여기는 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>SKY 상단지정석. </mark><br></br>
                 많이 팔렸네요.
             </p>
             </div>
@@ -70,7 +70,7 @@ function ScrollytellingStadium() {
             <div className="scroll-box">
             <p className={inView4 ? "active-step" : ""}>
                 Step: 4 <br></br>
-                여기는 SKY하단지정석. 여기는 원가 25,000원인데 평균 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em"}}><strong>100,048원</strong></mark>에 팔렸네요 ㅎㄷㄷ
+                여기는 SKY하단지정석. 여기는 원가 25,000원인데 평균 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView4 ? "bold" : "normal"}}>100,048원</mark>에 팔렸네요 ㅎㄷㄷ
             </p>
             </div>
         </section>
