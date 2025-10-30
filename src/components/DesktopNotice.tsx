@@ -1,7 +1,7 @@
 import React from "react";
 
 const DesktopNotice: React.FC = () => {
-  const isMobile = window.innerWidth < 720; // or use a more robust detection if needed
+  const isMobile = window.innerWidth < 100; // or use a more robust detection if needed
 
   if (!isMobile) return null;
 
