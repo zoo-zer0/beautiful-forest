@@ -20,9 +20,11 @@ interface Props {
   categoryData: Record<string, CategoryInfo[]>;
 //  ticketData: Record<string, Record<string, Bin[]>>;
   selectedSeat: Seat | null;
+  scrolly: boolean | null;
+
 }
 
-export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
+export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>{
     const ref = useRef<SVGSVGElement | null>(null);
     useEffect(()=>{
         if(!game || !ref.current) return;
@@ -49,6 +51,9 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat}) =>{
                 .style("white-space", "pre-line");
         svg.selectAll("*").remove();        
         if (selectedSeat===null){
+            if(scrolly){
+                return;
+            }
             d3.select("body").selectAll("div.tooltip-hist").remove();
 
             const labelMap: Record<string, string> = {
@@ -274,6 +279,6 @@ yAxisGroup.selectAll<SVGGElement, unknown>(".tick")
                 .text(`${game.title}: ${selectedSeat.구역} 재판매 가격 분포`);            
         }
     }, [game, selectedSeat, categoryData]);
-    return <svg ref={ref} width={600} height={500} style={{ backgroundColor: "#f9f9f9" }}></svg>;
+    return <svg ref={ref} width={600} height={500} style={{ backgroundColor: "#ffffffff" }}></svg>;
 
 }
