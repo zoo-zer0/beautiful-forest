@@ -6,6 +6,7 @@ import DesktopNotice from './components/DesktopNotice.tsx';
 import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 import Kakao from './components/Kakao.tsx';
 import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
+import Intro from './components/Intro.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -126,6 +127,7 @@ function App() {
   return (
     <div>
       <Kakao />
+      <Intro />
       <ScrollytellingStadium />      
       <h1>인터랙티브 구장</h1>
       <p>직접 살펴보삼. 클릭하면 티켓베이에 올라온 거래가격 분포 나옴.</p>

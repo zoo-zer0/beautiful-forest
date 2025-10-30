@@ -1,6 +1,6 @@
 function Intro(){
     return(
-        <div id="intro" style={{textAlign:"center", color:"rgb(11, 74, 136)", fontSize:"25px", margin:"10%"}}>
+        <div id="intro" style={{textAlign:"center", color:"rgb(11, 74, 136)", fontSize:"20px", margin:"10%"}}>
 열렬한 야구팬인 당신, 경기 직관을 위해 좌석 예매에 도전하지만, <br></br>
 이번에도 실패입니다. <br></br>
 <br></br>
