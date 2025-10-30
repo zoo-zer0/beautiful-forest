@@ -27,7 +27,7 @@ function SusScrolly() {
                 top: 10,        // distance from top of container
                 left: 20,       // distance from left
                 margin: 0,
-            }}>쫌쫌따리 예시</h2>
+            }}>쫌쫌따리 예시 (여기 텍스트는 걍 이전거 그대로...)</h2>
             <SusGraph OnStep={step} />
             </div>
         </div>
