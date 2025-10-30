@@ -7,6 +7,7 @@ import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 import Kakao from './components/Kakao.tsx';
 import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
 import Intro from './components/Intro.tsx';
+import Footer from './components/Footer.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -141,7 +142,7 @@ function App() {
         <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
         <BarChart data={sampleData2} width={500} height={400} title={"문화예술분야 암표 신고 접수 현황"}/>
       </div>
-      
+      <Footer />
     </div>
   );
 }
