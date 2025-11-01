@@ -50,18 +50,16 @@ const BarChart: React.FC<BarChartProps> = ({
       .attr("transform", `translate(${margin.left},${margin.top})`);
     // Tooltip setup
     const tooltip = d3
-      .select("body")
-      .append("div")
-      .style("position", "absolute")
-      .style("background", "white")
-      .style("padding", "8px 12px")
-      .style("border", "1px solid #ccc")
-      .style("border-radius", "6px")
-      .style("box-shadow", "0 2px 6px rgba(0,0,0,0.15)")
-      .style("font-size", "13px")
-      .style("visibility", "hidden")
-      .style("white-space", "pre-line"); // preserve line breaks
-
+                    .select("body")
+                    .append("div")
+                    .style("position", "absolute")
+                    .style("background", "rgba(0, 0, 0, 0.7)")
+                    .style("color", "white")
+                    .style("padding", "6px 10px")
+                    .style("border-radius", "4px")
+                    .style("font-size", "12px")
+                    .style("visibility", "hidden")
+                    .style("white-space", "pre-line");
     // bars
     g.selectAll("rect")
       .data(data)
@@ -76,17 +74,17 @@ const BarChart: React.FC<BarChartProps> = ({
         d3.select(this).attr("fill", hoverColor);
 
         // Tooltip content logic
-        let content = `${d.name}: ${d.value.toLocaleString()}`;
+        let content = ``;
         if (d.breakdown) {
           const breakdownText = Object.entries(d.breakdown)
             .map(([key, val]) => `${key}: ${val.toLocaleString()}`)
             .join("\n");
-          content += `\n\n${breakdownText}`;
+          content += `\n${breakdownText}`;
         }
 
         tooltip
           .style("visibility", "visible")
-          .text(content);
+          .html(`<strong>${d.name}: </strong>${d.value.toLocaleString()}${content}`);
       })
       .on("mousemove", function (event) {
         tooltip

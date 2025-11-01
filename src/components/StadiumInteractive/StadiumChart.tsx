@@ -69,7 +69,7 @@ useEffect(() => {
   );
 
   const stadiumColor = stadiumColors[game.stadium] || "red";
-  const colorScale = d3.scaleLinear<string>().domain([100, 500]).range(["white", stadiumColor]);
+  const colorScale = d3.scaleLinear<string>().domain([100, 800]).range(["white", stadiumColor]);
 
   svg
     .selectAll<SVGCircleElement, Seat>("circle")

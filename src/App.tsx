@@ -8,6 +8,7 @@ import Kakao from './components/Kakao.tsx';
 import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
 import Intro from './components/Intro.tsx';
 import Footer from './components/Footer.tsx';
+import Toggle from './components/Toggle.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -128,6 +129,33 @@ function App() {
   return (
     <div>
       <Kakao />
+      <Toggle 
+        summary="분석 및 추적 방법 더 읽어보기"
+        content={
+          <div>
+            <p>
+              ‘티켓베이(Ticketbay)’는 2025년 기준 <em>문화체육관광부의 프로스포츠 온라인 암표 신고 게시판에서 가장 많은 신고가 접수된 플랫폼</em>입니다.
+              (전체 28149건 중 21990건, 출처 : 민형배 의원실)
+            </p>
+
+            <p>
+              <strong>분석 절차 및 방법</strong><br />
+              2025년 7월 25일 ~ 2025년 8월 24일에 걸쳐 티켓베이에 게시된 프로야구 및 콘서트 매물을 크롤링하여 분석했습니다.
+            </p>
+
+            <p>
+              데이터 수집의 일관성을 위해 고정된 수집 주기를 정했습니다. 야구 경기는 매일 오후 7시 이후, 선예매·일반 예매 시작 1시간 후,
+              그리고 경기 시작 2시간 전에 데이터를 모았습니다. 공연의 경우, 하루 전날과 공연 시작 2시간 전에 수집했습니다.
+            </p>
+
+            <p>
+              데이터 분석은 실제 판매가 이루어졌다고 추정되는 매물을 기준으로 했습니다. 중복 여부와 티켓베이 내부 메시지 ‘삭제된 상품입니다’
+              표기를 통해 거래 성사 여부를 가려내, 실제 거래에 최대한 가까운 데이터셋을 만들었습니다.
+            </p>
+          </div>
+        }
+      />
+
       <Intro />
       <ScrollytellingStadium />      
       <h1>인터랙티브 구장</h1>

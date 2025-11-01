@@ -52,7 +52,7 @@ export const ColorScale: React.FC<Props> = ({ game }) => {
       .style("stroke", d3.color(stadiumColor)?.darker(2)?.toString() || stadiumColor)       // outline color
       .style("stroke-width", 0.5);      // thickness of the outline
 
-    // Add 100% and 500% labels on the left
+    // Add 100% and 800% labels on the left
     svg
       .append("text")
       .attr("x", margin.left - 10)
@@ -69,7 +69,7 @@ export const ColorScale: React.FC<Props> = ({ game }) => {
       .attr("text-anchor", "end")
       .attr("dominant-baseline", "middle")
       .attr("font-size", 12)
-      .text("500%");
+      .text("800%");
 
     // Axis label
     svg
