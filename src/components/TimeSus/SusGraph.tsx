@@ -6,7 +6,7 @@ interface Props {
 
 export const SusGraph: React.FC<Props> = ({ OnStep }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
-    const width = 800;
+    const width = 650;
     const height = 350;
   useEffect(() => {
     const data = [
