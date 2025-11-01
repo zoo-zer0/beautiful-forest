@@ -13,6 +13,8 @@ interface Props {
 
 export const StadiumChart: React.FC<Props> = ({ game, stadiumData, categoryData, selectedSeat, onSelect }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
+  const width = 400;
+  const height = width;
 useEffect(() => {
 
   if (!game || !svgRef.current) return;
@@ -32,8 +34,7 @@ useEffect(() => {
   const data = stadiumData[game.stadium] || [];
   const category = categoryData[game.id] || [];
 
-  const width = 500;
-  const height = 500;
+  
 //  const tooltip = d3.select("#tooltip");
   const tooltipSelected = d3
                   .select("body")
@@ -202,5 +203,5 @@ useEffect(() => {
   }, [selectedSeat]);
 
 
-  return <> <svg ref={svgRef} width={500} height={500} style={{ backgroundColor: "#eee" }} /> </>;
+  return <> <svg ref={svgRef} width={width} height={height} style={{ backgroundColor: "#eee" }} /> </>;
 };

@@ -30,6 +30,10 @@
     text-align: left;
     z-index: 10;
 }
+.scrolly{
+  width: 1000px;
+  margin: auto;
+}
 
 .scrolly_narrative_left {
   position: relative;

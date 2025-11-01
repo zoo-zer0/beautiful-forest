@@ -12,7 +12,7 @@ interface Props {
 
 export const StadiumChartScrolly: React.FC<Props> = ({ game, stadiumData, categoryData, selectedSeat }) => {
   const svgRef = useRef<SVGSVGElement | null>(null);
-  const width = 500;
+  const width = 400;
   const height = width;
   const xScale = d3.scaleLinear().domain([0, 950]).range([0, width]);
   const yScale = d3.scaleLinear().domain([0, 950]).range([0, height]);

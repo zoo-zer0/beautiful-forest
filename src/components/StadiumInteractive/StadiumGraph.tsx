@@ -25,7 +25,7 @@ interface Props {
 }
 
 export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>{
-    const width = 600;
+    const width = 500;
     const height = 500;
     const ref = useRef<SVGSVGElement | null>(null);
     useEffect(()=>{

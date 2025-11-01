@@ -27,7 +27,7 @@ export default function Toggle({
         style={{
           textAlign: "left",
           width: "90%",
-          maxWidth: "500px",
+          maxWidth: "580px",
           margin: "auto",
           padding: "10px 15px",
           border: "2px solid rgb(172, 172, 172)",
@@ -35,6 +35,7 @@ export default function Toggle({
           color: "rgba(84, 84, 84, 1)"
         }}
       >
+        
         <summary style={{color:"rgba(43, 43, 43, 1)"}}>{summary}</summary>
         {content}
       </details>

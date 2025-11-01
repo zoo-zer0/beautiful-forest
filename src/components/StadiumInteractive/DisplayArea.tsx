@@ -27,8 +27,8 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect, scr
       
       style={{
         position: "relative",
-        width: "500px",
-        height: "500px",
+        width: "400px",
+        height: "400px",
       }}>
         <div style={{ width: "100%", height: "100%" }}>
           {scrolly ? (
@@ -60,7 +60,7 @@ export const DisplayArea: React.FC<Props> = ({ game, selectedSeat, onSelect, scr
         <ColorScale game={game} />
         </div>
       </div>
-      <div style={{height: '500px', width: '600px'}}>
+      <div style={{height: '500px', width: '500px'}}>
         <StadiumGraph game={game}
         selectedSeat={selectedSeat}
         categoryData={categoryData}
