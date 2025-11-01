@@ -73,7 +73,7 @@ export default function TicketStack() {
     <div className="stack-container" ref={containerRef}>
         {[1, 2, 3, 4, 5].map((n) => (
           <div className="image-container" key={n}>
-            <img src={`./public/img/tickets/${n}.png`} alt={`ticket ${n}`} />
+            <img src={`/img/tickets/${n}.png`} alt={`ticket ${n}`} />
           </div>
         ))}
     </div>

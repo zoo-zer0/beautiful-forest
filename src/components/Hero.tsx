@@ -30,7 +30,7 @@ export default function Hero() {
     >
       {/* background image */}
       <img
-        src="./public/img/title.png"
+        src="/img/title.png"
         alt="Hero background"
         style={{
           height: "100vh",
