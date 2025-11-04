@@ -35,28 +35,28 @@ function SusScrolly() {
         <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
-                와일드카드 1차전 공식 예매가 시작된 오후 2시 이후 첫 30분을 살펴보겠습니다.
+                2025-10-09T20:42:45Z - 44.05 80초를 살펴보겠다. 
             </p>
             </div>
         </section>
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
-                30분만에 티켓베이에 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>XX개</mark>의 매물이 올라왔습니다.
+                취재진은 하나 올리는데 <mark style={{color: "white",backgroundColor:"#775496ff",padding:"0.05em 0.15em",fontWeight: inView2 ? "bold" : "normal"}}>40초 걸림.</mark>
             </p>
             </div>
         </section>
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView3 ? "active-step" : ""}>
-                그 중 A씨(ID: XXXX)는 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.1em",fontWeight: inView3 ? "bold" : "normal"}}>XX개</mark>나 올렸습니다.
+                암표상은 80초 안에 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.1em",fontWeight: inView3 ? "bold" : "normal"}}>7개</mark>나 올렸습니다.
             </p>
             </div>
         </section>
         <section ref={ref4} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView4 ? "active-step" : ""}>
-                예매 직후 만매에 난선 것은 관람이 목적이 없었다는 정황으로 볼 수 있습니다.
+                빨리빨리 수상수상
             </p>
             </div>
         </section>
