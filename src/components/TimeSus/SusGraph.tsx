@@ -23,7 +23,6 @@ export const SusGraph: React.FC<Props> = ({ OnStep }) => {
 { time: new Date("2025-10-09T20:45:39Z"), sus: 0 },
 { time: new Date("2025-10-09T20:45:52Z"), sus: 0 }
     ];
-    const color = "rgba(40, 67, 126, 1)";
 
 
     const margin = { top: 20, right: 20, bottom: 60, left: 50 };
