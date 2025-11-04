@@ -1,7 +1,9 @@
 import './App.css'
+import DonutChart from './components/Donut.tsx';
 import InteractiveStadium from './components/StadiumInteractive/InteractiveStadium.tsx';
 import BarChart from './assets/BarChart.tsx';
 import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
+//import ScrollytellingStadium2 from './components/StadiumInteractive/ScrollytellingStadium2.tsx';
 import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 import Kakao from './components/Kakao.tsx';
 import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
@@ -12,6 +14,7 @@ import QuoteBox from './assets/QuoteBox.tsx';
 import Narrative from './assets/Narrative.tsx';
 import TicketStack from './components/TicketStack.tsx';
 import Hero from './components/Hero.tsx';
+import Top10Toggles from './components/Top10Toggles.tsx';
 const sampleData = [
   {
     name: "2020",
@@ -86,43 +89,6 @@ const sampleData = [
     },
   },
 ];
-const sampleData2 = [
-  {
-    name: "2020",
-    value: 359,
-    
-  },
-  {
-    name: "2021",
-    value: 785,
-    
-  },
-  {
-    name: "2022",
-    value: 4224,
-    
-  },
-  {
-    name: "2023",
-    value: 2161,
-    breakdown: {
-      "음악분야": "1,717건",
-      "기타(팬미팅 등)": "216건",
-      "게임분야": "173건",
-      "뮤지컬분야": "55건",
-    },
-  },
-  {
-    name: "2024",
-    value: 2224,
-    breakdown: {
-      "음악분야": "1,471건",
-      "기타(팬미팅 등)": "543건",
-      "게임분야": "67건",
-      "뮤지컬분야": "143건",
-    },
-  },
-];
 
 
 
@@ -135,6 +101,7 @@ function App() {
       <Intro />
       <TicketStack />
       <Hero />
+      <Top10Toggles />
       <Narrative content={
         <p>적게는 정가의 3배(실 데이터로 수정 필요)부터 많게는 100배(실 데이터로 수정 필요)까지 뻥튀기되어있는 가격. 그러나 ‘암표’만이 경기를 볼 유일한 선택지가 되었습니다.</p>
       } />
@@ -187,12 +154,31 @@ function App() {
       <h1>인터랙티브 구장</h1>
       <p>직접 살펴보삼. 클릭하면 티켓베이에 올라온 거래가격 분포 나옴.</p>
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
+      <Narrative content={
+        <div>
+          <h2>암표로 인한 문화접근권 제한 - 휠체어석</h2>
+            <p>
+              휠체어석이 티켓 재판매 사이트에 올라오는 일도 있었습니다.
+            </p>
+            <p>
+              포스트시즌 기간동안 등록된 휠체어석 재판매 티켓은 총 27개, 원가의 약1.9배(192%)에 팔리고 있었습니다.
+            </p>
+            <p>
+              대부분이 휠체어석과 그 주변 일반석을 묶어 파는 형식이었습니다.
+            </p>
+            <p>
+              상업적 목적의 티켓 리셀로 인해 어떤 이들은 구할 수 있는 유일한 좌석을 빼앗기고 있는 것입니다.
+            </p>
+        </div>
+      } />
       <TimeScrollytelling />
       <SusScrolly />
       <h1>그래프 테스트</h1>
-      <div style={{display:"flex", width: "100%"}}>
-        <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
-        <BarChart data={sampleData2} width={500} height={400} title={"문화예술분야 암표 신고 접수 현황"}/>
+      <div style={{width: "90%",
+            maxWidth: "800px",display:"flex", margin: "auto"}}>
+        <BarChart data={sampleData} width={400} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
+        <DonutChart width={400} height={400} />
+
       </div>
       <Footer />
     </div>
