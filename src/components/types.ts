@@ -21,7 +21,7 @@ export type TicketData = Record<
 >;
 
 
-export type GameType = '와일드카드' | '준플레이오프' | '플레이오프' | '한국시리즈';
+export type GameType = '와일드카드' | '준플레이오프' | '플레이오프' | '한국시리즈' | '정규시즌';
 
 export interface Seat {
   x: number;

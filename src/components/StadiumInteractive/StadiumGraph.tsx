@@ -51,8 +51,8 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>
                 .style("visibility", "hidden")
                 .style("white-space", "pre-line");
         svg.selectAll("*").remove();        
-        if (selectedSeat===null){
-            if(scrolly){
+        if (selectedSeat===null || selectedSeat.x===-100){
+            if(scrolly && !(selectedSeat?.x===-100)){
                 return;
             }
             d3.select("body").selectAll("div.tooltip-hist").remove();

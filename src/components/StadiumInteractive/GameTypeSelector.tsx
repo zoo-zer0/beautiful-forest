@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const GameTypeSelector: React.FC<Props> = ({ selectedGameType, onSelect }) => {
-  const types: GameType[] = ['와일드카드', '준플레이오프', '플레이오프', '한국시리즈'];
+  const types: GameType[] = ['와일드카드', '준플레이오프', '플레이오프', '한국시리즈', "정규시즌"];
 
   return (
     <div id="game-type-selector">

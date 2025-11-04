@@ -28,6 +28,7 @@ function InteractiveStadium() {
 
     {id: '6', name: '1, 2차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 1, 2차'},
     {id: '7', name: '3, 4, 5차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 3, 4, 5차'},
+    {id: '8', name: '정규시즌 서울종합운동장 야구장', gameType:'정규시즌', stadium: 'lg', title: '8월 8~10일 한화 vs LG'}
 
   ];
 

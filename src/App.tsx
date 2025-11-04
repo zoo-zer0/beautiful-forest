@@ -183,14 +183,12 @@ function App() {
           </p>
         </div>
       } />
-      <TimeScrollytelling />
-      <SusScrolly />
       <ScrollytellingStadium />      
       <h1>인터랙티브 구장</h1>
       <p>직접 살펴보삼. 클릭하면 티켓베이에 올라온 거래가격 분포 나옴.</p>
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
-
-
+      <TimeScrollytelling />
+      <SusScrolly />
       <h1>그래프 테스트</h1>
       <div style={{display:"flex", width: "100%"}}>
         <BarChart data={sampleData} width={500} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>

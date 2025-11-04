@@ -16,15 +16,10 @@ function ScrollyStadium({ selectedGameId, selectedSeat, onSelectSeat }: ScrollyS
 
     { id: '4', name: '1, 2, 5차 대전 한화생명 볼파크', gameType: '플레이오프', stadium: 'hanhwa', title: '플레이오프 1, 2, 5차' },
     { id: '5', name: '3, 4차 대구 삼성 라이온즈 파크', gameType: '플레이오프', stadium: 'samsung', title: '플레이오프 3, 4차' },
+    {id: '6', name: '1, 2차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 1, 2차'},
+    {id: '7', name: '3, 4, 5차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 3, 4, 5차'},
 
-    {id: '6', name: '1차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 1차'},
-    {id: '7', name: '2차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 2차'},
-    {id: '8', name: '3차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 3차'},
-    {id: '9', name: '4차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 4차'},
-    {id: '10', name: '5차 대전 한화생명 볼파크', gameType:'한국시리즈', stadium:'hanhwa', title: '한국시리즈 5차'},
-    {id: '11', name: '6차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 6차'},
-    {id: '12', name: '7차 서울종합운동장 야구장', gameType:'한국시리즈', stadium:'lg', title: '한국시리즈 7차'},
-
+    {id: '8', name: '정규시즌 서울종합운동장 야구장', gameType:'정규시즌', stadium: 'lg', title: '8월 8~10일 한화 vs LG'}
   ];
 
   const selectedGame = allGames.find(game => game.id === selectedGameId) || null;
