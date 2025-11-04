@@ -1112,7 +1112,7 @@ export const TimeGraph: React.FC<Props> = ({ OnStep }) => {
 { time: new Date("2025-10-08T15:56:00Z"), sus: 0 },
 { time: new Date("2025-10-08T15:56:00Z"), sus: 0 },
     ];
-    const color = "rgba(139, 161, 210, 1)";
+    const color = "rgba(139, 162, 210, 0.68)";
 
 
     const margin = { top: 20, right: 20, bottom: 20, left: 50 };
@@ -1238,7 +1238,7 @@ if (OnStep === 2) {
     .attr("fill", color);
 
   dots
-    .transition().duration(500)
+    .transition().duration(200)
     .attr("cx", (d) => x(d.time))
     .attr("r",5)
     .attr("opacity", 1)

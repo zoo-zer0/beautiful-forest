@@ -2,7 +2,6 @@ import './App.css'
 import InteractiveStadium from './components/StadiumInteractive/InteractiveStadium.tsx';
 import BarChart from './assets/BarChart.tsx';
 import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
-import DesktopNotice from './components/DesktopNotice.tsx';
 import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
 import Kakao from './components/Kakao.tsx';
 import SusScrolly from './components/TimeSus/Sus.Scrolly.tsx';
@@ -190,7 +189,6 @@ function App() {
       <h1>인터랙티브 구장</h1>
       <p>직접 살펴보삼. 클릭하면 티켓베이에 올라온 거래가격 분포 나옴.</p>
       <div style={{transform:"scale(1)",display: "flex", flexDirection: "column", alignItems: "center"}}><InteractiveStadium /></div>
-      <DesktopNotice />
 
 
       <h1>그래프 테스트</h1>

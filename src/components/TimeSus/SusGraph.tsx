@@ -138,9 +138,9 @@ if (OnStep === 2) {
   const dots = svg
     .selectAll(".dot-us")
     .data([
-      new Date("2025-10-09T20:42:45Z"),
-      new Date("2025-10-09T20:43:25Z"),
-      new Date("2025-10-09T20:44:05Z"),
+      //new Date("2025-10-09T20:42:45Z"),
+      new Date("2025-10-09T20:43:05Z"),
+      new Date("2025-10-09T20:43:45Z"),
     ])
     .join("circle") // automatically handles enter/update/exit
     .attr("class", "dot-us")
@@ -162,7 +162,6 @@ if (OnStep === 3) {
   // Group data by time
   const grouped = d3.group(data, (d) => d.time.getTime());
   const stackedData: { time: Date; sus: number; stack: number }[] = [];
-
   // Assign stack positions for each group
   grouped.forEach((points) => {
     points.forEach((p, i) => {
