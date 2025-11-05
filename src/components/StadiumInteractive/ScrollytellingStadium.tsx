@@ -43,9 +43,6 @@ function ScrollytellingStadium() {
     return (
     <div className="scrolly">
         <div style={{top:"50px"}} className="sticky">
-      <h2 style={{color: (inView5||inView6||inView7)? "white":"black"}}>
-        정규시즌과 포스트시즌 차이
-      </h2>
             <div className="scrollyStadium">
                 <ScrollyStadium
                     selectedGameId={ activeGameID }

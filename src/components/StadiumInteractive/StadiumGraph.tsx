@@ -73,9 +73,10 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>
                 .range([0, x0.bandwidth()])
                 .padding(0.01);
             const y = d3.scaleLinear()
-                .domain([0, d3.max(data, d=>Math.max(d.평균_가격, d.평균_원가))! * 1.1])
-                .nice()
+                .nice().domain([0,1000000])
                 .range([height-margin.bottom, margin.top]);
+            
+            
             const color = d3.scaleOrdinal<string>()
                 .domain(["평균_원가", "평균_가격"])
                 .range([primaryColor, secondaryColor]);

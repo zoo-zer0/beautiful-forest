@@ -4,7 +4,7 @@ export default function Footer(){
   style={{
     backgroundColor: "rgb(43, 63, 107)",
     color: "white",
-    width: "99vw",     // full viewport width
+    width: "99.5vw",     // full viewport width
     position: "relative",
     left: "50%",
     right: "50%",

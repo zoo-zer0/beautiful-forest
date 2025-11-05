@@ -118,13 +118,25 @@ const BarChart: React.FC<BarChartProps> = ({
       .attr("stroke", "black"); // ✅ axis line and ticks black
 
     // title
-    g.append("text")
+g
+      .append("text")
       .attr("x", innerWidth / 2)
-      .attr("y", -10)
+      .attr("y", 0)
       .attr("text-anchor", "middle")
-      .style("font-size", "16px")
+      .style("font-size", "18px")
+      .style("font-weight", "bold")
       .style("fill","black")
       .text(title);
+
+    g
+      .append("text")
+      .attr("x", innerWidth /2)
+      .attr("y", 20)
+      .attr("text-anchor", "middle")
+      .style("font-size", "13px")
+      .style("fill", "#666")
+      .text("(23.01~25.07)");
+
   }, [data, width, height, color]);
 
   return <svg ref={ref} width={width} height={height} style={{ borderRadius:"10px", backgroundColor: "#ffffffff" }}></svg>;
