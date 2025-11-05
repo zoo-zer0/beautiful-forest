@@ -35,28 +35,28 @@ function SusScrolly() {
         <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
-                2025-10-09T20:42:45Z - 44.05 80초를 살펴보겠다. 
+업로드 시점을 좀 더 들여다보았을 때, 10월 9일 오후 8시 42분 45초부터 44분 5초 사이 특이한 점을 발견했습니다. 
             </p>
             </div>
         </section>
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
-                취재진은 하나 올리는데 <mark style={{color: "white",backgroundColor:"#775496ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>40초 걸림.</mark>
+취재진이 직접 업로드를 시도한 결과, 티켓 1장을 등록하는 데 약 40초가 소요됐습니다. 같은 시간에 최대 2개의 매물만 게시할 수 있었습니다.
             </p>
             </div>
         </section>
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView3 ? "active-step" : ""}>
-                암표상은 80초 안에 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.15em",fontWeight: inView3 ? "bold" : "normal"}}>7개</mark>나 올렸습니다.
+그러나 D씨는<strong>불과 80초 만에 7개</strong>의 매물을 올렸습니다.
             </p>
             </div>
         </section>
         <section ref={ref4} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView4 ? "active-step" : ""}>
-                빨리빨리 수상수상
+<strong>매크로(자동 입력 프로그램)</strong>를 이용했을 가능성이 높은 대목입니다.
             </p>
             </div>
         </section>

@@ -36,29 +36,28 @@ function TimeScrollytelling() {
         <section ref={ref1} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView1 ? "active-step" : ""}>
-                준PO 2차전 공식 예매가 시작된 오후 3시 이후 1시간을 살펴보겠습니다. (1시간이 그래프 이쁘게 나옴)
-            </p>
+준플레이오프 2차전 공식 예매가 시작된 오후 3시 이후,  한 시간 사이에 등록된 재판매 티켓 물량을 살펴봤습니다.
+             </p>
             </div>
         </section>
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
-                1시간만에 티켓베이에 <mark style={{backgroundColor:"#bfc4d9ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>XX개</mark>의 매물이 올라왔습니다.
+단 1시간 만에 1,146개의 매물이 올라왔습니다. 
             </p>
             </div>
         </section>
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView3 ? "active-step" : ""}>
-                (이건 렌덤으로 찍음) <br></br>
-                그 중 A씨(?) 같은 상세 내용(?) <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.1em",fontWeight: inView3 ? "bold" : "normal"}}>14개</mark>나 올렸습니다.
+특히 약 2억 원 상당의 티켓을 등록한 것으로 추정되는 D씨는, 1시간 동안 14개의 티켓을 게시했습니다.
             </p>
             </div>
         </section>
         <section ref={ref4} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView4 ? "active-step" : ""}>
-                예매 직후 만매에 난선 것은 관람이 목적이 없었다는 정황으로 볼 수 있습니다.
+예매 직후 판매에 나선 점으로 미뤄볼 때, 관람 목적이 아닌 <strong>영리성 전매 행위</strong>로 해석됩니다.
             </p>
             </div>
         </section>

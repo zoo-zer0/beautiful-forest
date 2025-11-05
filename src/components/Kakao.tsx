@@ -37,7 +37,7 @@ export default function Kakao() {
           return prev;
         }
       });
-    }, 1000); // Show new message every 1.5 seconds
+    }, 500); // Show new message every 1.5 seconds
 
     return () => clearInterval(interval);
   }, [isAnimating, messageFiles.length]);
