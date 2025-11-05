@@ -102,7 +102,7 @@ export default function Conclusion(){
 
 4. (암표매매) 흥행장, 경기장, 역, 나루터, 정류장, 그 밖에 정하여진 요금을 받고 입장시키거나 승차 또는 승선시키는 곳에서 <strong>웃돈을 받고</strong> 입장권ㆍ승차권 또는 승선권을 다른 사람에게 <strong>되판 사람</strong>
 </div>} source={<small style={{color:"gray"}}>위반 시 : 20만원 이하의 벌금, 구류 또는 과료</small>} color={"rgba(149, 137, 113, 1)"}/>
-<Narrative content={<p>→ ‘암표’ 대신 ‘부정판매’라는 개념을 사용하며, 상습·영업 목적이거나 매크로 이용한 경우에 한해 처벌. </p>} />
+<Narrative content={<p>→ 현장에서 웃돈을 받고 되파는 행위만을 규제</p>} />
 <br></br>
 <QuoteBox quote={<div style={{color:"black"}}>
 <strong>공연법 제4조의2(입장권등의 부정판매 금지 등)</strong>
