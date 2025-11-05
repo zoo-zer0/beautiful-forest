@@ -97,14 +97,25 @@ const BarChart: React.FC<BarChartProps> = ({
       });
 
     // x-axis
+    // x-axis
     g.append("g")
       .attr("transform", `translate(0,${innerHeight})`)
       .call(d3.axisBottom(x))
       .selectAll("text")
-      .style("font-size", "12px");
+      .style("font-size", "12px")
+      .style("fill", "black"); // ✅ tick labels black
+
+    g.selectAll(".domain, .tick line")
+      .attr("stroke", "black"); // ✅ axis line and ticks black
 
     // y-axis
-    g.append("g").call(d3.axisLeft(y).ticks(5));
+    g.append("g")
+      .call(d3.axisLeft(y).ticks(5))
+      .selectAll("text")
+      .style("fill", "black"); // ✅ tick labels black
+
+    g.selectAll(".domain, .tick line")
+      .attr("stroke", "black"); // ✅ axis line and ticks black
 
     // title
     g.append("text")
@@ -112,10 +123,11 @@ const BarChart: React.FC<BarChartProps> = ({
       .attr("y", -10)
       .attr("text-anchor", "middle")
       .style("font-size", "16px")
+      .style("fill","black")
       .text(title);
   }, [data, width, height, color]);
 
-  return <svg ref={ref} width={width} height={height}></svg>;
+  return <svg ref={ref} width={width} height={height} style={{ borderRadius:"10px", backgroundColor: "#ffffffff" }}></svg>;
 };
 
 export default BarChart;

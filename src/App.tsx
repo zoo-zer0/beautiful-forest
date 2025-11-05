@@ -1,7 +1,7 @@
 import './App.css'
-import DonutChart from './components/Donut.tsx';
+//import DonutChart from './components/Donut.tsx';
 import InteractiveStadium from './components/StadiumInteractive/InteractiveStadium.tsx';
-import BarChart from './assets/BarChart.tsx';
+//import BarChart from './assets/BarChart.tsx';
 import ScrollytellingStadium from './components/StadiumInteractive/ScrollytellingStadium.tsx';
 //import ScrollytellingStadium2 from './components/StadiumInteractive/ScrollytellingStadium2.tsx';
 import TimeScrollytelling from './components/TimeScrolly/TimeScrolly.tsx';
@@ -16,80 +16,8 @@ import TicketStack from './components/TicketStack.tsx';
 import Hero from './components/Hero.tsx';
 import { ToggleClean } from './components/Top10Toggles.tsx';
 import Top10Toggles from './components/Top10Toggles.tsx';
-const sampleData = [
-  {
-    name: "2020",
-    value: 1607,
-    breakdown: {
-      KBO: "1527건",
-      "K리그": "22건",
-      KBL: "0건",
-      WKBL: "0건",
-      KOVO: "58건",
-      기타: "0건",
-    },
-  },
-  {
-    name: "2021",
-    value: 1423,
-    breakdown: {
-      KBO: "1075건",
-      "K리그": "52건",
-      KBL: "63건",
-      WKBL: "0건",
-      KOVO: "233건",
-      기타: "0건",
-    },
-  },
-  {
-    name: "2022",
-    value: 7829,
-    breakdown: {
-      KBO: "7685건",
-      "K리그": "0건",
-      KBL: "37건",
-      WKBL: "0건",
-      KOVO: "107건",
-      기타: "0건",
-    },
-  },
-  {
-    name: "2023",
-    value: 14728,
-    breakdown: {
-      KBO: "14185건",
-      "K리그": "308건",
-      KBL: "109건",
-      WKBL: "2건",
-      KOVO: "124건",
-      기타: "0건",
-    },
-  },
-  {
-    name: "2024",
-    value: 21442,
-    breakdown: {
-      KBO: "20807건",
-      "K리그": "499건",
-      KBL: "115건",
-      WKBL: "0건",
-      KOVO: "21건",
-      기타: "0건",
-    },
-  },
-  {
-    name: "2025",
-    value: 28149,
-    breakdown: {
-      KBO: "27589건",
-      "K리그": "297건",
-      KBL: "172건",
-      WKBL: "0건",
-      KOVO: "57건",
-      기타: "34건",
-    },
-  },
-];
+import Conclusion from './components/Conclusion.tsx';
+
 
 
 
@@ -326,14 +254,7 @@ function App() {
 
       <TimeScrollytelling />
       <SusScrolly />
-
-      <h1>그래프 테스트</h1>
-      <div style={{width: "90%",
-            maxWidth: "800px",display:"flex", margin: "auto"}}>
-        <BarChart data={sampleData} width={400} height={400} title={"스포츠 분야 암표 신고 접수 현황"}/>
-        <DonutChart width={400} height={400} />
-
-      </div>
+      <Conclusion />
       <Footer />
     </div>
   );

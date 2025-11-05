@@ -171,7 +171,7 @@ const DonutChart: React.FC<DonutChartProps> = ({ width = 400, height = 400 }) =>
     };
   }, [width, height]);
 
-  return <svg ref={ref}></svg>;
+  return <svg ref={ref} style={{ borderRadius:"10px", backgroundColor: "#ffffffff" }}></svg>;
 };
 
 export default DonutChart;
