@@ -10,7 +10,8 @@ export default function Footer(){
     right: "50%",
     marginLeft: "-50vw",
     marginRight: "-50vw",
-    height: "25vh"
+    height: "25vh",
+    marginTop:"-50px"
   }}
   className="site-footer"
 >

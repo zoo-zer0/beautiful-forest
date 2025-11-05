@@ -91,7 +91,7 @@
 }
 .conclusion {
   position: relative;
-  padding-bottom: 5%;
+  padding-bottom: 100px;
   background-color: #000000; /* solid fill inside */
   color: rgb(228, 228, 228);
   z-index: 0;

@@ -57,7 +57,7 @@ function TimeScrollytelling() {
         <section ref={ref4} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView4 ? "active-step" : ""}>
-예매 직후 판매에 나선 점으로 미뤄볼 때, 관람 목적이 아닌 <strong>영리성 전매 행위</strong>로 해석됩니다.
+예매 직후 판매에 나선 점으로 미뤄볼 때, 관람 목적이 아닌 <strong>영리 추구</strong>로 해석됩니다.
             </p>
             </div>
         </section>
