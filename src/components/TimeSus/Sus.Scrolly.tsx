@@ -42,14 +42,14 @@ function SusScrolly() {
         <section ref={ref2} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView2 ? "active-step" : ""}>
-                취재진은 하나 올리는데 <mark style={{color: "white",backgroundColor:"#775496ff",padding:"0.05em 0.15em",fontWeight: inView2 ? "bold" : "normal"}}>40초 걸림.</mark>
+                취재진은 하나 올리는데 <mark style={{color: "white",backgroundColor:"#775496ff",padding:"0.05em 0.1em",fontWeight: inView2 ? "bold" : "normal"}}>40초 걸림.</mark>
             </p>
             </div>
         </section>
         <section ref={ref3} style={{ height: "100vh"}}>
             <div className="scroll-box">
             <p className={inView3 ? "active-step" : ""}>
-                암표상은 80초 안에 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.1em",fontWeight: inView3 ? "bold" : "normal"}}>7개</mark>나 올렸습니다.
+                암표상은 80초 안에 <mark style={{color:"white",backgroundColor:"#b90000ff",padding:"0.05em 0.15em",fontWeight: inView3 ? "bold" : "normal"}}>7개</mark>나 올렸습니다.
             </p>
             </div>
         </section>

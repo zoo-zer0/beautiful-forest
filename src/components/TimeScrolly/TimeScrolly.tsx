@@ -26,7 +26,7 @@ function TimeScrollytelling() {
             <h2 style={{
                 position: "absolute",
                 top: 10,        // distance from top of container
-                left: 20,       // distance from left
+                left: 300,       // distance from left
                 margin: 0,
             }}>티켓 거래 속에 드러난 수상한 흔적</h2>
             <TimeGraph OnStep={step} />

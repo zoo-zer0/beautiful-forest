@@ -137,7 +137,7 @@ export const StadiumGraph: React.FC<Props> = ({ game, selectedSeat, scrolly}) =>
                 .style("font-size", "13px")
                 .text(labelMap[key]);
             svg.append("text")
-                .attr("x", width / 2)
+                .attr("x", width / 2+10)
                 .attr("y", margin.top)
                 .attr("text-anchor", "middle")
                 .style("font-size", "16px")
