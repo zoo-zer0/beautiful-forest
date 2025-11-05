@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 #root {
   margin: 0 auto;
+  font-family: "Noto Sans KR";
   /*width: 95%;*/
   text-align: center;
   align-items: center;    /* center horizontally */
