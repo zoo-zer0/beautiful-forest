@@ -109,7 +109,7 @@ function App() {
           <object style={{width:"100%"}} data="/img/data/야구 top 통장표 찐.svg" type="image/svg+xml"></object>
           <p>티켓 수익과 수량을 기준으로 상위 5명을 분석한 결과, 최소 총액마저도 약 천만 원으로 추정됐습니다. </p>
 
-          <p>이 가운데 수익과 수량 모두 상위권을 차지한 <strong>A씨(ID: 588064)</strong>는 조사 기간 동안 한화- LG의 3연전을 비롯한 여러 경기의 티켓을 활발히 판매했습니다. A씨가 재판매한 티켓은 <strong>총 425장으로 5084만6,800원</strong>에 달했습니다.</p>
+          <p>이 가운데 수익과 수량 모두 상위권을 차지한 <strong>A씨(ID: 588064)</strong>는 조사 기간 동안 한화- LG의 3연전을 비롯한 여러 경기의 티켓을 활발히 판매했습니다. A씨가 재판매한 티켓은 <strong>총 428장으로 5084만6,800원</strong>에 달했습니다.</p>
           <object style={{width:"100%"}} data="/img/data/야구 top 통장표 b c씨 강조.svg" type="image/svg+xml"></object>
           <p>정규 시즌 판매 수익·수량 TOP 5에 포함된 <strong>B씨(ID: 2208431)와 C씨(ID: 2681179)</strong>는 포스트시즌에서도 티켓을 판매한 것으로 확인됐습니다.</p>
 

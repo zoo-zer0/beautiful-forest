@@ -135,7 +135,7 @@ g
       .attr("text-anchor", "middle")
       .style("font-size", "13px")
       .style("fill", "#666")
-      .text("(23.01~25.07)");
+      .text("(2020~2025)");
 
   }, [data, width, height, color]);
 

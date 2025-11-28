@@ -17,7 +17,7 @@ export default function Footer(){
 >
       <div className="footer-inner">
     <p style={{paddingTop:"20px"}}className="footer-logo"><strong>🌳Beautiful숲</strong></p>
-    <p style={{color:"rgba(191, 197, 210, 1)"}}className="footer-credit">© 2025 Beautiful숲 | 기획·제작: 김수빈, 이가은, 이민규, 이소연, 현주영</p>
+    <p style={{color:"rgba(191, 197, 210, 1)"}}className="footer-credit">© 2025 Beautiful숲 | 기획·제작: 김수빈, 이가은, 이민규, 이소연, <a style={{color:"rgba(204, 217, 244, 1)"}} href="https://zoo-zer0.github.io/">현주영</a></p>
     <p className="footer-links">
       <a style={{color:"rgba(204, 217, 244, 1)"}} href="#top"> · 맨 위로 · </a>
     </p>
